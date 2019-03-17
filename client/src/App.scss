@@ -1,0 +1,58 @@
+$primary: #b0bec5;
+$secondary: #808e95;
+$primary-action: #e2f1f8;
+
+.background-image {
+  background: url("./images/image1.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.slick-next {
+  right: 35px;
+}
+
+.slick-prev {
+  left: 35px;
+}
+
+.slick-next,
+.slick-prev {
+  z-index: 2;
+}
+
+
+@import "~bootstrap/scss/bootstrap";
+
