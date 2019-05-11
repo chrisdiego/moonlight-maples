@@ -23,7 +23,7 @@ module.exports =
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "8b6655d9a2c6c8698c0f";
+/******/ 	var hotCurrentHash = "659fb5f01a39a70d6a5e";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -992,99 +992,84 @@ var AboutPage = function AboutPage(props) {
       fileName: _jsxFileName,
       lineNumber: 17
     }
-  }, "Where to find us"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, "About Moonlight Maples"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
     variant: "subtitle1",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 20
     }
-  }, "Our store front is located in Georgia, Vermont.  Use the tool below to find directions!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
-    width: "100%",
-    height: "300",
-    frameborder: "0",
-    src: "https://www.google.com/maps/embed/v1/search?key=AIzaSyCPo3CUHJk83mZtsFGUWb8c_Ps2QBIvD9k&q=1177+Sand+Hill+Rd,+Milton,+VT+05468",
-    allowFullScreen: true,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24
-    }
-  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
+  }, "This is a brief paragraph about the origins of Moonlight Maples, the owners of the business, how long they've been in business, and the scale of the current operation.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     sm: "3",
     className: "border-left",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 24
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Card__WEBPACK_IMPORTED_MODULE_3___default.a, {
     className: "shadow-sm mb-4",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 25
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_4___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 26
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
     component: "h2",
     variant: "h5",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 27
     }
   }, "Contact Us"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     "class": "text-dark",
     href: "mailto:moonlightmaples@yahoo.com",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 30
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
     component: "p",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 31
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     "class": "far fa-envelope px-2",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 32
     }
   }), "moonlightmaples@yahoo.com")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     "class": "text-dark",
     href: "tel:8025982317",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 36
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
     variant: "subtitle1",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 37
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     "class": "fas fa-phone px-2",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 38
     }
   }), "(802) 598-2317")))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 46
     }
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 47
     }
   }));
 };
@@ -1235,7 +1220,7 @@ var _jsxFileName = "/home/chris/git/moonlight-maples/src/Footer.js";
 var Footer = function Footer() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], {
     fluid: true,
-    className: "bg-secondary p-4 shadow-lg",
+    className: "bg-secondary p-4 shadow-lg text-center",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
@@ -1559,8 +1544,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _images_info_highlight_jpg__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_images_info_highlight_jpg__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _images_maples_logo_svg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./images/maples-logo.svg */ "./src/images/maples-logo.svg");
 /* harmony import */ var _images_maples_logo_svg__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_images_maples_logo_svg__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _content_indexProductCards__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./content/indexProductCards */ "./src/content/indexProductCards.js");
+/* harmony import */ var _content_products__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./content/products */ "./src/content/products.js");
+/* harmony import */ var _content_products__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_content_products__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _indexPage_scss__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./indexPage.scss */ "./src/indexPage.scss");
+/* harmony import */ var _indexPage_scss__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_indexPage_scss__WEBPACK_IMPORTED_MODULE_9__);
 var _jsxFileName = "/home/chris/git/moonlight-maples/src/IndexPage.js";
+
 
 
 
@@ -1575,23 +1564,29 @@ var IndexPage = function IndexPage(props) {
   var productCards = function productCards(_ref) {
     var cards = _ref.cards;
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
-      className: "mt-4",
+      className: "mb-4 featured-products",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 17
+        lineNumber: 19
       }
-    }, cards.map(function (card) {
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
+      sm: "2",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 20
+      }
+    }), cards.map(function (card) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-        sm: "3",
+        sm: "2",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
+          lineNumber: 23
         }
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Card"], {
-        className: "shadow-sm mb-3",
+        className: "shadow-md mb-3 rounded",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21
+          lineNumber: 24
         }
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardImg"], {
         top: true,
@@ -1600,33 +1595,33 @@ var IndexPage = function IndexPage(props) {
         alt: "Maple Syrup",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 25
         }
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardBody"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23
+          lineNumber: 26
         }
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardTitle"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24
+          lineNumber: 27
         }
       }, card.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardSubtitle"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 25
+          lineNumber: 28
         }
       }, card.price), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardText"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 26
+          lineNumber: 29
         }
       }, card.text), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3___default.a, {
         variant: "contained",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 27
+          lineNumber: 30
         }
       }, "Add to cart"))));
     }));
@@ -1634,20 +1629,21 @@ var IndexPage = function IndexPage(props) {
 
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], {
     fluid: true,
+    className: "text-center",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 43
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 44
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     className: "p-0 background-image shadow mb-4",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 45
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Jumbotron"], {
     className: "w-100 py-0",
@@ -1656,12 +1652,12 @@ var IndexPage = function IndexPage(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 46
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 47
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: _images_maples_logo_svg__WEBPACK_IMPORTED_MODULE_7___default.a,
@@ -1671,13 +1667,13 @@ var IndexPage = function IndexPage(props) {
     className: "m-auto mw-100",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 48
     }
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], {
     className: "rounded p-4 bg-secondary",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 49
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
     component: "h2",
@@ -1685,29 +1681,29 @@ var IndexPage = function IndexPage(props) {
     gutterBottom: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 51
     }
   }, "Serving the Vermont region and beyond with handcrafted maple products since 1999"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", {
     className: "my-2",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 54
     }
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3___default.a, {
     variant: "contained",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 55
     }
-  }, "Explore our Products")))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
+  }, "Explore our Products")))), productCards(cards))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 65
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 66
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     style: {
@@ -1716,12 +1712,12 @@ var IndexPage = function IndexPage(props) {
     className: "rounded p-4 bg-white shadow-lg intro-highlight position-relative",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 67
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 68
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     xs: {
@@ -1734,37 +1730,37 @@ var IndexPage = function IndexPage(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 69
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Hidden__WEBPACK_IMPORTED_MODULE_4___default.a, {
     only: "xs",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 70
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
     variant: "h4",
     gutterBottom: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 71
     }
   }, "Who we are")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
     variant: "body1",
     align: "left",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 75
     }
   }, "Maple syrup is a syrup usually made from the xylem sap of sugar maple, red maple, or black maple trees, although it can also be made from other maple species. In cold climates, these trees store starch in their trunks and roots before winter; the starch is then converted to sugar that rises in the sap in late winter and early spring. Maple trees are tapped by drilling holes into their trunks and collecting the exuded sap, which is processed by heating to evaporate much of the water, leaving the concentrated syrup.", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 77
     }
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 77
     }
   }), "Maple syrup was first collected and used by the indigenous peoples of North America, and the practice was adopted by European settlers, who gradually refined production methods. Technological improvements in the 1970s further refined syrup processing. The Canadian province of Quebec is by far the largest producer, responsible for 70 percent of the world's output; Canadian exports of maple syrup in 2016 were C$ 487 million (about US$ 360 million), with Quebec accounting for some 90 percent of this total.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     xs: {
@@ -1776,20 +1772,20 @@ var IndexPage = function IndexPage(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 81
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Hidden__WEBPACK_IMPORTED_MODULE_4___default.a, {
     smUp: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75
+      lineNumber: 82
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
     variant: "h4",
     gutterBottom: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76
+      lineNumber: 83
     }
   }, "Who we are")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: _images_info_highlight_jpg__WEBPACK_IMPORTED_MODULE_6___default.a,
@@ -1798,7 +1794,7 @@ var IndexPage = function IndexPage(props) {
     alt: "",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80
+      lineNumber: 87
     }
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
     className: "mt-2",
@@ -1806,14 +1802,14 @@ var IndexPage = function IndexPage(props) {
     gutterBottom: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81
+      lineNumber: 88
     }
   }, "Robbie Morrill and Ruth Chiappinelli ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81
+      lineNumber: 88
     }
-  }), " Maple King & Queen, 2010")))))), productCards(_content_indexProductCards__WEBPACK_IMPORTED_MODULE_8__["default"]));
+  }), " Maple King & Queen, 2010")))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (IndexPage);
@@ -1887,47 +1883,6 @@ var LinkList = function LinkList(props) {
 
 /***/ }),
 
-/***/ "./src/content/indexProductCards.js":
-/*!******************************************!*\
-  !*** ./src/content/indexProductCards.js ***!
-  \******************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _images_maple_leaf_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../images/maple-leaf.jpg */ "./src/images/maple-leaf.jpg");
-/* harmony import */ var _images_maple_leaf_jpg__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_images_maple_leaf_jpg__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _images_maple_candies_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../images/maple-candies.jpg */ "./src/images/maple-candies.jpg");
-/* harmony import */ var _images_maple_candies_jpg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_images_maple_candies_jpg__WEBPACK_IMPORTED_MODULE_1__);
-
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  cards: [{
-    img: _images_maple_leaf_jpg__WEBPACK_IMPORTED_MODULE_0___default.a,
-    price: "$999",
-    title: "Classic Maple Syrup",
-    text: "This is some maple syrup!"
-  }, {
-    img: _images_maple_candies_jpg__WEBPACK_IMPORTED_MODULE_1___default.a,
-    price: "$999",
-    title: "Classic Maple Candies",
-    text: "This is some maple candy!"
-  }, {
-    img: _images_maple_candies_jpg__WEBPACK_IMPORTED_MODULE_1___default.a,
-    price: "$999",
-    title: "Classic Maple Candies",
-    text: "This is some maple candy!"
-  }, {
-    img: _images_maple_leaf_jpg__WEBPACK_IMPORTED_MODULE_0___default.a,
-    price: "$999",
-    title: "Classic Maple Syrup",
-    text: "This is some maple syrup!"
-  }]
-});
-
-/***/ }),
-
 /***/ "./src/content/linksLists.js":
 /*!***********************************!*\
   !*** ./src/content/linksLists.js ***!
@@ -1961,6 +1916,17 @@ var contactLinks = [{
 
 /***/ }),
 
+/***/ "./src/content/products.js":
+/*!*********************************!*\
+  !*** ./src/content/products.js ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /home/chris/git/moonlight-maples/src/content/products.js: Unexpected token, expected \",\" (79:1)\n\n\u001b[0m \u001b[90m 77 | \u001b[39m\t\t]\u001b[0m\n\u001b[0m \u001b[90m 78 | \u001b[39m\t}\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 79 | \u001b[39m\t{\u001b[0m\n\u001b[0m \u001b[90m    | \u001b[39m\t\u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 80 | \u001b[39m\t\tname\u001b[33m:\u001b[39m \u001b[32m\"honey\"\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 81 | \u001b[39m\t\tmainImage\u001b[33m:\u001b[39m mapleLeaf\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 82 | \u001b[39m\t\tdescription\u001b[33m:\u001b[39m \u001b[32m\"This is some honey\"\u001b[39m\u001b[33m,\u001b[39m\t\u001b[0m\n    at Object.raise (/home/chris/git/moonlight-maples/node_modules/@babel/parser/lib/index.js:6322:17)\n    at Object.unexpected (/home/chris/git/moonlight-maples/node_modules/@babel/parser/lib/index.js:7638:16)\n    at Object.expect (/home/chris/git/moonlight-maples/node_modules/@babel/parser/lib/index.js:7624:28)\n    at Object.parseExprList (/home/chris/git/moonlight-maples/node_modules/@babel/parser/lib/index.js:9419:14)\n    at Object.parseExprAtom (/home/chris/git/moonlight-maples/node_modules/@babel/parser/lib/index.js:8736:30)\n    at Object.parseExprAtom (/home/chris/git/moonlight-maples/node_modules/@babel/parser/lib/index.js:3596:20)\n    at Object.parseExprSubscripts (/home/chris/git/moonlight-maples/node_modules/@babel/parser/lib/index.js:8385:23)\n    at Object.parseMaybeUnary (/home/chris/git/moonlight-maples/node_modules/@babel/parser/lib/index.js:8365:21)\n    at Object.parseExprOps (/home/chris/git/moonlight-maples/node_modules/@babel/parser/lib/index.js:8252:23)\n    at Object.parseMaybeConditional (/home/chris/git/moonlight-maples/node_modules/@babel/parser/lib/index.js:8225:23)\n    at Object.parseMaybeAssign (/home/chris/git/moonlight-maples/node_modules/@babel/parser/lib/index.js:8172:21)\n    at Object.parseVar (/home/chris/git/moonlight-maples/node_modules/@babel/parser/lib/index.js:10415:26)\n    at Object.parseVarStatement (/home/chris/git/moonlight-maples/node_modules/@babel/parser/lib/index.js:10234:10)\n    at Object.parseStatementContent (/home/chris/git/moonlight-maples/node_modules/@babel/parser/lib/index.js:9830:21)\n    at Object.parseStatement (/home/chris/git/moonlight-maples/node_modules/@babel/parser/lib/index.js:9763:17)\n    at Object.parseExportDeclaration (/home/chris/git/moonlight-maples/node_modules/@babel/parser/lib/index.js:10956:17)");
+
+/***/ }),
+
 /***/ "./src/images/image1.jpg":
 /*!*******************************!*\
   !*** ./src/images/image1.jpg ***!
@@ -1991,28 +1957,6 @@ module.exports = __webpack_require__.p + "static/media/info-highlight.d6752937.j
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,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"
-
-/***/ }),
-
-/***/ "./src/images/maple-candies.jpg":
-/*!**************************************!*\
-  !*** ./src/images/maple-candies.jpg ***!
-  \**************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/media/maple-candies.dda768a0.jpg";
-
-/***/ }),
-
-/***/ "./src/images/maple-leaf.jpg":
-/*!***********************************!*\
-  !*** ./src/images/maple-leaf.jpg ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/media/maple-leaf.d5c9ddd7.jpg";
 
 /***/ }),
 
@@ -2070,6 +2014,17 @@ if (true) {
 
 /***/ }),
 
+/***/ "./src/indexPage.scss":
+/*!****************************!*\
+  !*** ./src/indexPage.scss ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
 /***/ "./src/server.js":
 /*!***********************!*\
   !*** ./src/server.js ***!
@@ -2117,7 +2072,7 @@ server.disable('x-powered-by').use(express__WEBPACK_IMPORTED_MODULE_3___default.
   if (context.url) {
     res.redirect(context.url);
   } else {
-    res.status(200).send("<!doctype html>\n    <html lang=\"\">\n    <head>\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n        <meta charset=\"utf-8\" />\n        <title>Welcome to Razzle</title>\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n        ".concat(assets.client.css ? "<link rel=\"stylesheet\" href=\"".concat(assets.client.css, "\">") : '', "\n        ").concat( false ? undefined : "<script src=\"".concat(assets.client.js, "\" defer crossorigin></script>"), "\n    </head>\n    <body>\n        <div id=\"root\">").concat(markup, "</div>\n    </body>\n</html>"));
+    res.status(200).send("<!doctype html>\n    <html lang=\"\">\n    <head>\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n        <meta charset=\"utf-8\" />\n        <title>Moonlight Maples</title>\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n        ".concat(assets.client.css ? "<link rel=\"stylesheet\" href=\"".concat(assets.client.css, "\">") : '', "\n        ").concat( false ? undefined : "<script src=\"".concat(assets.client.js, "\" defer crossorigin></script>"), "\n    </head>\n    <body>\n        <div id=\"root\">").concat(markup, "</div>\n    </body>\n</html>"));
   }
 });
 /* harmony default export */ __webpack_exports__["default"] = (server);

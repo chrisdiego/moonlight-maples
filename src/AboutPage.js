@@ -15,14 +15,11 @@ const AboutPage = (props) => {
 				</Col>
 				<Col sm="9">
 					<Typography component="h2" variant="h5">
-					Where to find us
+						About Moonlight Maples
 					</Typography>
 					<Typography variant="subtitle1">
-						Our store front is located in Georgia, Vermont.  Use the tool below to find directions!
+						This is a brief paragraph about the origins of Moonlight Maples, the owners of the business, how long they've been in business, and the scale of the current operation.
 					</Typography>
-					<div>
-				      <iframe width="100%" height="300" frameborder="0" src="https://www.google.com/maps/embed/v1/search?key=AIzaSyCPo3CUHJk83mZtsFGUWb8c_Ps2QBIvD9k&q=1177+Sand+Hill+Rd,+Milton,+VT+05468" allowFullScreen></iframe>
-				    </div>
 				</Col>
 				<Col sm="3" className="border-left">
 					<Card className="shadow-sm mb-4">

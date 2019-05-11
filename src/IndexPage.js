@@ -8,17 +8,20 @@ import image1 from './images/image1.jpg';
 import image4 from './images/info-highlight.jpg';
 import logo from './images/maples-logo.svg';
 
-import cards from './content/indexProductCards';
+import products from './content/products';
+
+import './indexPage.scss';
 
 const IndexPage = (props) => {
 
     const productCards = ({ cards }) => {
     	return (
-	    	<Row className="mt-4">
+	    	<Row className="mb-4 featured-products"> 
+			    <Col sm="2" />
 	    		{cards.map(card => {
 		    			return (
-		    				<Col sm="3">
-						       	<Card className="shadow-sm mb-3">
+		    				<Col sm="2">
+						       	<Card className="shadow-md mb-3 rounded">
 									<CardImg top width="100%" src={card.img} alt="Maple Syrup" />
 									<CardBody>
 										<CardTitle>{card.title}</CardTitle>
@@ -37,7 +40,7 @@ const IndexPage = (props) => {
 
 
 	return (
-		<Container fluid>
+		<Container fluid className="text-center">
 			<Row>
 				<Col className="p-0 background-image shadow mb-4">
 					<Jumbotron className="w-100 py-0" style={{ backgroundColor: "transparent" }}>
@@ -53,8 +56,12 @@ const IndexPage = (props) => {
 					        </Container>
 				        </div>
 				    </Jumbotron>
+				  	
+	        		{productCards(cards)}
+
 				</Col>
 	        </Row>
+
 	        <Row>
 	        	<Col>
 	        		<div style={{ zIndex: "2" }} className="rounded p-4 bg-white shadow-lg intro-highlight position-relative">
@@ -84,8 +91,6 @@ const IndexPage = (props) => {
 	        		</div>
 	        	</Col>
 	        </Row>
-	        
-	        {productCards(cards)}
 
       </Container>
 	);

@@ -6,7 +6,7 @@ import LinkList from './LinkList';
 import { sitemapLinks, contactLinks } from './content/linksLists.js';
 
 const Footer = () => (
-  <Container fluid className="bg-secondary p-4 shadow-lg">
+  <Container fluid className="bg-secondary p-4 shadow-lg text-center">
     <Row>
       <Col sm={{ offset: 3, size: 3} }> 
         <LinkList footerLinks={sitemapLinks} subtitle="Sitemap" />
