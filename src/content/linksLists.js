@@ -1,29 +1,29 @@
-export let sitemapLinks = [
+export const sitemapLinks = [
   {
-    label: "Home"
+    label: 'Home',
   },
   {
-    label: "Products"
+    label: 'Products',
   },
   {
-    label: "About"
+    label: 'About',
   },
   {
-    label: "Moonlight Apiaries"
+    label: 'Moonlight Apiaries',
   },
-]
+];
 
-export let contactLinks = [
+export const contactLinks = [
   {
-    label: "moonlightmaples@yahoo.com",
-    iconClasses: "far fa-envelope px-2",
+    label: 'moonlightmaples@yahoo.com',
+    iconClasses: 'far fa-envelope px-2',
   },
   {
-    label: "(802) 598-2317",
-    iconClasses: "fas fa-phone px-2",
+    label: '(802) 598-2317',
+    iconClasses: 'fas fa-phone px-2',
   },
   {
-    label: "facebook.com/moonlightmaples",
-    iconClasses: "fab fa-facebook px-2",
+    label: 'facebook.com/moonlightmaples',
+    iconClasses: 'fab fa-facebook px-2',
   },
-]
+];

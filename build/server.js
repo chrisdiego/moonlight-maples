@@ -23,7 +23,7 @@ module.exports =
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "659fb5f01a39a70d6a5e";
+/******/ 	var hotCurrentHash = "132713d5155e4607fed5";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -760,7 +760,7 @@ module.exports =
 /*! exports provided: client, , default */
 /***/ (function(module) {
 
-module.exports = {"client":{"js":"http://localhost:3001/static/js/bundle.js"},"":{"jpg":["http://localhost:3001/static/media/image1.991d2eed.jpg","http://localhost:3001/static/media/info-highlight.d6752937.jpg","http://localhost:3001/static/media/maple-candies.dda768a0.jpg","http://localhost:3001/static/media/maple-leaf.d5c9ddd7.jpg"],"svg":"http://localhost:3001/static/media/maples-logo.f9a5a320.svg"}};
+module.exports = {"client":{"js":"http://localhost:3001/static/js/bundle.js"},"":{"jpg":["http://localhost:3001/static/media/image1.991d2eed.jpg","http://localhost:3001/static/media/info-highlight.d6752937.jpg","http://localhost:3001/static/media/maple-leaf.d5c9ddd7.jpg"],"svg":"http://localhost:3001/static/media/maples-logo.f9a5a320.svg"}};
 
 /***/ }),
 
@@ -927,10 +927,10 @@ if (true) {
 
 /***/ }),
 
-/***/ "./src/AboutPage.js":
-/*!**************************!*\
-  !*** ./src/AboutPage.js ***!
-  \**************************/
+/***/ "./src/AboutPage.jsx":
+/*!***************************!*\
+  !*** ./src/AboutPage.jsx ***!
+  \***************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -946,30 +946,30 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_Card__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Card__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/CardContent */ "@material-ui/core/CardContent");
 /* harmony import */ var _material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_4__);
-var _jsxFileName = "/home/chris/git/moonlight-maples/src/AboutPage.js";
+var _jsxFileName = "/home/chris/git/moonlight-maples/src/AboutPage.jsx";
 
 
 
 
 
 
-var AboutPage = function AboutPage(props) {
+var AboutPage = function AboutPage() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 8
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
     className: "mb-4",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 9
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     sm: "12",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 10
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
     component: "h1",
@@ -977,99 +977,99 @@ var AboutPage = function AboutPage(props) {
     className: "m-4",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 11
     }
   }, "About Us")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     sm: "9",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 15
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
     component: "h2",
     variant: "h5",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 16
     }
   }, "About Moonlight Maples"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
     variant: "subtitle1",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 19
     }
   }, "This is a brief paragraph about the origins of Moonlight Maples, the owners of the business, how long they've been in business, and the scale of the current operation.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     sm: "3",
     className: "border-left",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 23
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Card__WEBPACK_IMPORTED_MODULE_3___default.a, {
     className: "shadow-sm mb-4",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 24
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_4___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 25
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
     component: "h2",
     variant: "h5",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 26
     }
   }, "Contact Us"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    "class": "text-dark",
+    className: "text-dark",
     href: "mailto:moonlightmaples@yahoo.com",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 29
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
     component: "p",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 30
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    "class": "far fa-envelope px-2",
+    className: "far fa-envelope px-2",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 31
     }
   }), "moonlightmaples@yahoo.com")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    "class": "text-dark",
+    className: "text-dark",
     href: "tel:8025982317",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 35
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
     variant: "subtitle1",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 36
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    "class": "fas fa-phone px-2",
+    className: "fas fa-phone px-2",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 37
     }
   }), "(802) 598-2317")))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 45
     }
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 46
     }
   }));
 };
@@ -1078,10 +1078,10 @@ var AboutPage = function AboutPage(props) {
 
 /***/ }),
 
-/***/ "./src/App.js":
-/*!********************!*\
-  !*** ./src/App.js ***!
-  \********************/
+/***/ "./src/App.jsx":
+/*!*********************!*\
+  !*** ./src/App.jsx ***!
+  \*********************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1101,10 +1101,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "react-router-dom");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_router_dom__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Header */ "./src/Header.js");
-/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Footer */ "./src/Footer.js");
-/* harmony import */ var _IndexPage__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./IndexPage */ "./src/IndexPage.js");
-/* harmony import */ var _AboutPage__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./AboutPage */ "./src/AboutPage.js");
+/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Header */ "./src/Header.jsx");
+/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Footer */ "./src/Footer.jsx");
+/* harmony import */ var _IndexPage__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./IndexPage */ "./src/IndexPage.jsx");
+/* harmony import */ var _AboutPage__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./AboutPage */ "./src/AboutPage.jsx");
 /* harmony import */ var _App_scss__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./App.scss */ "./src/App.scss");
 /* harmony import */ var _App_scss__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_App_scss__WEBPACK_IMPORTED_MODULE_11__);
 
@@ -1112,7 +1112,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/home/chris/git/moonlight-maples/src/App.js";
+var _jsxFileName = "/home/chris/git/moonlight-maples/src/App.jsx";
 
 
 
@@ -1193,10 +1193,101 @@ function (_Component) {
 
 /***/ }),
 
-/***/ "./src/Footer.js":
-/*!***********************!*\
-  !*** ./src/Footer.js ***!
-  \***********************/
+/***/ "./src/FeaturedProducts.jsx":
+/*!**********************************!*\
+  !*** ./src/FeaturedProducts.jsx ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactstrap */ "reactstrap");
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/Button */ "@material-ui/core/Button");
+/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _content_products__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./content/products */ "./src/content/products.js");
+var _jsxFileName = "/home/chris/git/moonlight-maples/src/FeaturedProducts.jsx";
+
+
+
+
+
+var featuredProducts = function featuredProducts() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
+    className: "mb-4 featured-products",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
+    sm: "2",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    }
+  }), _content_products__WEBPACK_IMPORTED_MODULE_3__["default"].map(function (product) {
+    return product.featured ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
+      sm: "2",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 15
+      }
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Card"], {
+      className: "shadow-md mb-3 rounded",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 16
+      }
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardImg"], {
+      top: true,
+      width: "100%",
+      src: product.mainImage,
+      alt: "Maple Syrup",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 17
+      }
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardBody"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 18
+      }
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardTitle"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 19
+      }
+    }, product.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardSubtitle"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 20
+      }
+    }, "???"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardText"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 21
+      }
+    }, product.description), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_2___default.a, {
+      variant: "contained",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 22
+      }
+    }, "View")))) : null;
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (featuredProducts);
+
+/***/ }),
+
+/***/ "./src/Footer.jsx":
+/*!************************!*\
+  !*** ./src/Footer.jsx ***!
+  \************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1208,9 +1299,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/Typography */ "@material-ui/core/Typography");
 /* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _LinkList__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./LinkList */ "./src/LinkList.js");
+/* harmony import */ var _LinkList__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./LinkList */ "./src/LinkList.jsx");
 /* harmony import */ var _content_linksLists_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./content/linksLists.js */ "./src/content/linksLists.js");
-var _jsxFileName = "/home/chris/git/moonlight-maples/src/Footer.js";
+var _jsxFileName = "/home/chris/git/moonlight-maples/src/Footer.jsx";
 
 
 
@@ -1223,12 +1314,12 @@ var Footer = function Footer() {
     className: "bg-secondary p-4 shadow-lg text-center",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 11
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 12
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     sm: {
@@ -1237,14 +1328,14 @@ var Footer = function Footer() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 13
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_LinkList__WEBPACK_IMPORTED_MODULE_3__["default"], {
     footerLinks: _content_linksLists_js__WEBPACK_IMPORTED_MODULE_4__["sitemapLinks"],
     subtitle: "Sitemap",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 14
     }
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     sm: {
@@ -1252,35 +1343,35 @@ var Footer = function Footer() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 16
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_LinkList__WEBPACK_IMPORTED_MODULE_3__["default"], {
     footerLinks: _content_linksLists_js__WEBPACK_IMPORTED_MODULE_4__["contactLinks"],
     subtitle: "Contact",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 17
     }
   }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 20
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 21
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
     variant: "body1",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 22
     }
-  }, "\xA9 2018 Moonlight Maples, all rights reserved ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+  }, "\xA9 2018 Moonlight Maples, all rights reserved", ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 25
     }
   }), "Site by Chris Diego"))));
 };
@@ -1289,10 +1380,10 @@ var Footer = function Footer() {
 
 /***/ }),
 
-/***/ "./src/Header.js":
-/*!***********************!*\
-  !*** ./src/Header.js ***!
-  \***********************/
+/***/ "./src/Header.jsx":
+/*!************************!*\
+  !*** ./src/Header.jsx ***!
+  \************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1319,17 +1410,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-router-dom */ "react-router-dom");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react_router_dom__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _images_logo_text_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./images/logo-text.png */ "./src/images/logo-text.png");
-/* harmony import */ var _images_logo_text_png__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_images_logo_text_png__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! reactstrap */ "reactstrap");
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! reactstrap */ "reactstrap");
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _images_logo_text_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./images/logo-text.png */ "./src/images/logo-text.png");
+/* harmony import */ var _images_logo_text_png__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_images_logo_text_png__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _images_maples_logo_svg__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./images/maples-logo.svg */ "./src/images/maples-logo.svg");
+/* harmony import */ var _images_maples_logo_svg__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_images_maples_logo_svg__WEBPACK_IMPORTED_MODULE_12__);
 
 
 
 
 
 
-var _jsxFileName = "/home/chris/git/moonlight-maples/src/Header.js";
+var _jsxFileName = "/home/chris/git/moonlight-maples/src/Header.jsx";
+
 
 
 
@@ -1349,7 +1443,7 @@ function (_React$Component) {
 
     _this = _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2___default()(this, _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3___default()(Header).call(this, props));
     _this.state = {
-      isOpen: false
+      isOpen: true
     };
     _this.toggle = _this.toggle.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_this));
     return _this;
@@ -1357,156 +1451,186 @@ function (_React$Component) {
 
   _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1___default()(Header, [{
     key: "toggle",
-    value: function toggle() {
-      this.setState({
-        isOpen: !this.state.isOpen
-      });
+    value: function toggle(screen) {
+      console.log(screen.scrollTop);
+
+      if (screen.scrollTop == 0) {
+        this.setState({
+          isOpen: true
+        });
+      } else {
+        this.setState({
+          isOpen: false
+        });
+      }
+    }
+  }, {
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var screen = document.getElementsByClassName('App');
+      window.addEventListener('scroll', this.toggle(screen));
     }
   }, {
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_11__["Navbar"], {
+      return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_10__["Navbar"], {
+        onScroll: this.toggle,
         className: "bg-primary shadow-lg sticky-top",
         light: true,
         expand: "md",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 49
         }
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_11__["NavbarBrand"], {
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_10__["NavbarBrand"], {
         href: "/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 50
         }
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("img", {
-        width: "120",
-        src: _images_logo_text_png__WEBPACK_IMPORTED_MODULE_10___default.a,
+      }, this.state.isOpen ? null : react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("img", {
+        width: "200",
+        src: _images_maples_logo_svg__WEBPACK_IMPORTED_MODULE_12___default.a,
         alt: "Moonlight Maples Logo",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 51
         }
-      })), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_11__["NavbarToggler"], {
+      })), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_10__["NavbarToggler"], {
         onClick: this.toggle,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 53
         }
-      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_11__["Collapse"], {
+      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_10__["Collapse"], {
         isOpen: this.state.isOpen,
         navbar: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
+          lineNumber: 54
         }
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_11__["Nav"], {
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_10__["Nav"], {
         className: "mr-auto",
         navbar: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40
+          lineNumber: 55
         }
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_11__["NavItem"], {
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_10__["NavItem"], {
         className: "pr-2",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
+          lineNumber: 56
         }
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_11__["NavLink"], {
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_10__["NavLink"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42
+          lineNumber: 57
         }
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_9__["Link"], {
         to: "/products",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 43
+          lineNumber: 58
         }
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_7___default.a, {
         variant: "contained",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 59
         }
-      }, "Shop Products")))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_11__["NavItem"], {
+      }, "Shop Products")))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_10__["NavItem"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 50
+          lineNumber: 65
         }
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_11__["NavLink"], {
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_10__["NavLink"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 51
+          lineNumber: 66
         }
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_9__["Link"], {
         to: "/about",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 52
+          lineNumber: 67
         }
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_7___default.a, {
         variant: "outlined",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 53
+          lineNumber: 68
         }
-      }, "About Us"))))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_11__["Nav"], {
+      }, "About Us"))))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_10__["Nav"], {
+        className: "m-auto",
+        navbar: true,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 75
+        }
+      }, this.state.isOpen ? react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("img", {
+        width: "200",
+        src: _images_maples_logo_svg__WEBPACK_IMPORTED_MODULE_12___default.a,
+        alt: "Moonlight Maples Logo",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 76
+        }
+      }) : null), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_10__["Nav"], {
         className: "ml-auto",
         navbar: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 60
+          lineNumber: 78
         }
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_11__["NavItem"], {
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_10__["NavItem"], {
         className: "pr-2",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 61
+          lineNumber: 79
         }
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
-        "class": "text-dark",
+        className: "text-dark",
         href: "mailto:moonlightmaples@yahoo.com",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 62
+          lineNumber: 80
         }
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_8___default.a, {
         variant: "subtitle1",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 63
+          lineNumber: 81
         }
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("i", {
-        "class": "far fa-envelope px-2",
+        className: "far fa-envelope px-2",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 64
+          lineNumber: 82
         }
-      }), "moonlightmaples@yahoo.com"))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_11__["NavItem"], {
+      }), "moonlightmaples@yahoo.com"))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_10__["NavItem"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 69
+          lineNumber: 87
         }
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
-        "class": "text-dark",
+        className: "text-dark",
         href: "tel:8025982317",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 70
+          lineNumber: 88
         }
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_8___default.a, {
         variant: "subtitle1",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 71
+          lineNumber: 89
         }
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("i", {
-        "class": "fas fa-phone px-2",
+        className: "fas fa-phone px-2",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 72
+          lineNumber: 90
         }
       }), "(802) 598-2317"))))));
     }
@@ -1519,10 +1643,10 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ "./src/IndexPage.js":
-/*!**************************!*\
-  !*** ./src/IndexPage.js ***!
-  \**************************/
+/***/ "./src/IndexPage.jsx":
+/*!***************************!*\
+  !*** ./src/IndexPage.jsx ***!
+  \***************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1538,17 +1662,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _material_ui_core_Hidden__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/Hidden */ "@material-ui/core/Hidden");
 /* harmony import */ var _material_ui_core_Hidden__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Hidden__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _images_image1_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./images/image1.jpg */ "./src/images/image1.jpg");
-/* harmony import */ var _images_image1_jpg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_images_image1_jpg__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _images_info_highlight_jpg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./images/info-highlight.jpg */ "./src/images/info-highlight.jpg");
-/* harmony import */ var _images_info_highlight_jpg__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_images_info_highlight_jpg__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _images_maples_logo_svg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./images/maples-logo.svg */ "./src/images/maples-logo.svg");
-/* harmony import */ var _images_maples_logo_svg__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_images_maples_logo_svg__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _content_products__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./content/products */ "./src/content/products.js");
-/* harmony import */ var _content_products__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_content_products__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _FeaturedProducts__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./FeaturedProducts */ "./src/FeaturedProducts.jsx");
+/* harmony import */ var _images_image1_jpg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./images/image1.jpg */ "./src/images/image1.jpg");
+/* harmony import */ var _images_image1_jpg__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_images_image1_jpg__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _images_info_highlight_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./images/info-highlight.jpg */ "./src/images/info-highlight.jpg");
+/* harmony import */ var _images_info_highlight_jpg__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_images_info_highlight_jpg__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _images_maples_logo_svg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./images/maples-logo.svg */ "./src/images/maples-logo.svg");
+/* harmony import */ var _images_maples_logo_svg__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_images_maples_logo_svg__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var _indexPage_scss__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./indexPage.scss */ "./src/indexPage.scss");
 /* harmony import */ var _indexPage_scss__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_indexPage_scss__WEBPACK_IMPORTED_MODULE_9__);
-var _jsxFileName = "/home/chris/git/moonlight-maples/src/IndexPage.js";
+var _jsxFileName = "/home/chris/git/moonlight-maples/src/IndexPage.jsx";
 
 
 
@@ -1561,163 +1684,92 @@ var _jsxFileName = "/home/chris/git/moonlight-maples/src/IndexPage.js";
 
 
 var IndexPage = function IndexPage(props) {
-  var productCards = function productCards(_ref) {
-    var cards = _ref.cards;
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
-      className: "mb-4 featured-products",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 19
-      }
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-      sm: "2",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 20
-      }
-    }), cards.map(function (card) {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-        sm: "2",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 23
-        }
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Card"], {
-        className: "shadow-md mb-3 rounded",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 24
-        }
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardImg"], {
-        top: true,
-        width: "100%",
-        src: card.img,
-        alt: "Maple Syrup",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 25
-        }
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardBody"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 26
-        }
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardTitle"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 27
-        }
-      }, card.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardSubtitle"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 28
-        }
-      }, card.price), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardText"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 29
-        }
-      }, card.text), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3___default.a, {
-        variant: "contained",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 30
-        }
-      }, "Add to cart"))));
-    }));
-  };
-
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], {
     fluid: true,
     className: "text-center",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 17
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 18
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     className: "p-0 background-image shadow mb-4",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 19
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Jumbotron"], {
-    className: "w-100 py-0",
+    className: "w-100 py-0 mt-5",
     style: {
-      backgroundColor: "transparent"
+      backgroundColor: 'transparent'
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 20
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 21
     }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _images_maples_logo_svg__WEBPACK_IMPORTED_MODULE_7___default.a,
-    alt: "Moonlight Maples Logo",
-    width: "500",
-    height: "auto",
-    className: "m-auto mw-100",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 48
-    }
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], {
     className: "rounded p-4 bg-secondary",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 22
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
     component: "h2",
-    variant: "h5",
+    variant: "h4",
     gutterBottom: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 24
     }
   }, "Serving the Vermont region and beyond with handcrafted maple products since 1999"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", {
     className: "my-2",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 27
     }
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3___default.a, {
     variant: "contained",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 28
     }
-  }, "Explore our Products")))), productCards(cards))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
+  }, "Explore our Products")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_FeaturedProducts__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65
+      lineNumber: 33
+    }
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 39
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     style: {
-      zIndex: "2"
+      zIndex: '2'
     },
     className: "rounded p-4 bg-white shadow-lg intro-highlight position-relative",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 40
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 41
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     xs: {
@@ -1730,37 +1782,37 @@ var IndexPage = function IndexPage(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69
+      lineNumber: 42
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Hidden__WEBPACK_IMPORTED_MODULE_4___default.a, {
     only: "xs",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 43
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
     variant: "h4",
     gutterBottom: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
+      lineNumber: 44
     }
   }, "Who we are")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
     variant: "body1",
     align: "left",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75
+      lineNumber: 48
     }
   }, "Maple syrup is a syrup usually made from the xylem sap of sugar maple, red maple, or black maple trees, although it can also be made from other maple species. In cold climates, these trees store starch in their trunks and roots before winter; the starch is then converted to sugar that rises in the sap in late winter and early spring. Maple trees are tapped by drilling holes into their trunks and collecting the exuded sap, which is processed by heating to evaporate much of the water, leaving the concentrated syrup.", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77
+      lineNumber: 50
     }
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77
+      lineNumber: 51
     }
   }), "Maple syrup was first collected and used by the indigenous peoples of North America, and the practice was adopted by European settlers, who gradually refined production methods. Technological improvements in the 1970s further refined syrup processing. The Canadian province of Quebec is by far the largest producer, responsible for 70 percent of the world's output; Canadian exports of maple syrup in 2016 were C$ 487 million (about US$ 360 million), with Quebec accounting for some 90 percent of this total.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     xs: {
@@ -1772,29 +1824,29 @@ var IndexPage = function IndexPage(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81
+      lineNumber: 55
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Hidden__WEBPACK_IMPORTED_MODULE_4___default.a, {
     smUp: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82
+      lineNumber: 56
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
     variant: "h4",
     gutterBottom: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83
+      lineNumber: 57
     }
   }, "Who we are")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _images_info_highlight_jpg__WEBPACK_IMPORTED_MODULE_6___default.a,
+    src: _images_info_highlight_jpg__WEBPACK_IMPORTED_MODULE_7___default.a,
     width: "300",
     className: "rounded",
     alt: "",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87
+      lineNumber: 61
     }
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
     className: "mt-2",
@@ -1802,24 +1854,24 @@ var IndexPage = function IndexPage(props) {
     gutterBottom: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88
+      lineNumber: 62
     }
-  }, "Robbie Morrill and Ruth Chiappinelli ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+  }, "Robbie Morrill and Ruth Chiappinelli", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88
+      lineNumber: 64
     }
-  }), " Maple King & Queen, 2010")))))));
+  }), ' ', "Maple King & Queen, 2010")))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (IndexPage);
 
 /***/ }),
 
-/***/ "./src/LinkList.js":
-/*!*************************!*\
-  !*** ./src/LinkList.js ***!
-  \*************************/
+/***/ "./src/LinkList.jsx":
+/*!**************************!*\
+  !*** ./src/LinkList.jsx ***!
+  \**************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1831,7 +1883,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/Typography */ "@material-ui/core/Typography");
 /* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/home/chris/git/moonlight-maples/src/LinkList.js";
+var _jsxFileName = "/home/chris/git/moonlight-maples/src/LinkList.jsx";
 
 
 
@@ -1867,13 +1919,13 @@ var LinkList = function LinkList(props) {
       className: "bg-secondary",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 14
+        lineNumber: 13
       }
     }, link.iconClasses ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-      "class": link.iconClasses,
+      className: link.iconClasses,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 15
+        lineNumber: 14
       }
     }) : null, link.label);
   }))));
@@ -1895,23 +1947,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sitemapLinks", function() { return sitemapLinks; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "contactLinks", function() { return contactLinks; });
 var sitemapLinks = [{
-  label: "Home"
+  label: 'Home'
 }, {
-  label: "Products"
+  label: 'Products'
 }, {
-  label: "About"
+  label: 'About'
 }, {
-  label: "Moonlight Apiaries"
+  label: 'Moonlight Apiaries'
 }];
 var contactLinks = [{
-  label: "moonlightmaples@yahoo.com",
-  iconClasses: "far fa-envelope px-2"
+  label: 'moonlightmaples@yahoo.com',
+  iconClasses: 'far fa-envelope px-2'
 }, {
-  label: "(802) 598-2317",
-  iconClasses: "fas fa-phone px-2"
+  label: '(802) 598-2317',
+  iconClasses: 'fas fa-phone px-2'
 }, {
-  label: "facebook.com/moonlightmaples",
-  iconClasses: "fab fa-facebook px-2"
+  label: 'facebook.com/moonlightmaples',
+  iconClasses: 'fab fa-facebook px-2'
 }];
 
 /***/ }),
@@ -1920,10 +1972,100 @@ var contactLinks = [{
 /*!*********************************!*\
   !*** ./src/content/products.js ***!
   \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /home/chris/git/moonlight-maples/src/content/products.js: Unexpected token, expected \",\" (79:1)\n\n\u001b[0m \u001b[90m 77 | \u001b[39m\t\t]\u001b[0m\n\u001b[0m \u001b[90m 78 | \u001b[39m\t}\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 79 | \u001b[39m\t{\u001b[0m\n\u001b[0m \u001b[90m    | \u001b[39m\t\u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 80 | \u001b[39m\t\tname\u001b[33m:\u001b[39m \u001b[32m\"honey\"\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 81 | \u001b[39m\t\tmainImage\u001b[33m:\u001b[39m mapleLeaf\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 82 | \u001b[39m\t\tdescription\u001b[33m:\u001b[39m \u001b[32m\"This is some honey\"\u001b[39m\u001b[33m,\u001b[39m\t\u001b[0m\n    at Object.raise (/home/chris/git/moonlight-maples/node_modules/@babel/parser/lib/index.js:6322:17)\n    at Object.unexpected (/home/chris/git/moonlight-maples/node_modules/@babel/parser/lib/index.js:7638:16)\n    at Object.expect (/home/chris/git/moonlight-maples/node_modules/@babel/parser/lib/index.js:7624:28)\n    at Object.parseExprList (/home/chris/git/moonlight-maples/node_modules/@babel/parser/lib/index.js:9419:14)\n    at Object.parseExprAtom (/home/chris/git/moonlight-maples/node_modules/@babel/parser/lib/index.js:8736:30)\n    at Object.parseExprAtom (/home/chris/git/moonlight-maples/node_modules/@babel/parser/lib/index.js:3596:20)\n    at Object.parseExprSubscripts (/home/chris/git/moonlight-maples/node_modules/@babel/parser/lib/index.js:8385:23)\n    at Object.parseMaybeUnary (/home/chris/git/moonlight-maples/node_modules/@babel/parser/lib/index.js:8365:21)\n    at Object.parseExprOps (/home/chris/git/moonlight-maples/node_modules/@babel/parser/lib/index.js:8252:23)\n    at Object.parseMaybeConditional (/home/chris/git/moonlight-maples/node_modules/@babel/parser/lib/index.js:8225:23)\n    at Object.parseMaybeAssign (/home/chris/git/moonlight-maples/node_modules/@babel/parser/lib/index.js:8172:21)\n    at Object.parseVar (/home/chris/git/moonlight-maples/node_modules/@babel/parser/lib/index.js:10415:26)\n    at Object.parseVarStatement (/home/chris/git/moonlight-maples/node_modules/@babel/parser/lib/index.js:10234:10)\n    at Object.parseStatementContent (/home/chris/git/moonlight-maples/node_modules/@babel/parser/lib/index.js:9830:21)\n    at Object.parseStatement (/home/chris/git/moonlight-maples/node_modules/@babel/parser/lib/index.js:9763:17)\n    at Object.parseExportDeclaration (/home/chris/git/moonlight-maples/node_modules/@babel/parser/lib/index.js:10956:17)");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _images_maple_leaf_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../images/maple-leaf.jpg */ "./src/images/maple-leaf.jpg");
+/* harmony import */ var _images_maple_leaf_jpg__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_images_maple_leaf_jpg__WEBPACK_IMPORTED_MODULE_0__);
+
+var products = [{
+  name: 'Maple Syrup',
+  mainImage: _images_maple_leaf_jpg__WEBPACK_IMPORTED_MODULE_0___default.a,
+  description: 'This is some maple syrup',
+  featured: true,
+  sizes: [{
+    quantity: 'Gallon',
+    price: 42,
+    image: ''
+  }, {
+    quantity: '1/2 Gallon',
+    price: 23,
+    image: ''
+  }, {
+    quantity: 'Quart',
+    price: 14,
+    image: ''
+  }, {
+    quantity: 'Pint',
+    price: 8,
+    image: ''
+  }, {
+    quantity: '1/2 Pint',
+    price: 5,
+    image: ''
+  }, {
+    quantity: '3.4 Oz',
+    price: 3.50,
+    image: ''
+  }]
+}, {
+  name: 'Maple Cream',
+  mainImage: _images_maple_leaf_jpg__WEBPACK_IMPORTED_MODULE_0___default.a,
+  description: 'This is some maple cream',
+  featured: true,
+  sizes: [{
+    quantity: 'Pound',
+    price: 12,
+    image: ''
+  }, {
+    quantity: '1/2 Pound',
+    price: 7,
+    image: ''
+  }]
+}, {
+  name: 'Maple Sugar',
+  mainImage: _images_maple_leaf_jpg__WEBPACK_IMPORTED_MODULE_0___default.a,
+  description: 'This is some maple sugar',
+  featured: true,
+  sizes: [{
+    quantity: 'Pound',
+    price: 12,
+    image: ''
+  }, {
+    quantity: '1/2 Pound',
+    price: 8,
+    image: ''
+  }]
+}, {
+  name: 'Maple Honey',
+  mainImage: _images_maple_leaf_jpg__WEBPACK_IMPORTED_MODULE_0___default.a,
+  description: 'This is some honey',
+  featured: true,
+  sizes: [{
+    quantity: '5 lb',
+    price: 35,
+    image: ''
+  }, {
+    quantity: '2.5 lb',
+    price: 20,
+    image: ''
+  }, {
+    quantity: '2 lb',
+    price: 14,
+    image: ''
+  }, {
+    quantity: '16 oz',
+    price: 8,
+    image: ''
+  }, {
+    quantity: '8 oz',
+    price: 5,
+    image: ''
+  }]
+}];
+/* harmony default export */ __webpack_exports__["default"] = (products);
 
 /***/ }),
 
@@ -1960,6 +2102,17 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOAAAAB0CAYAAACc
 
 /***/ }),
 
+/***/ "./src/images/maple-leaf.jpg":
+/*!***********************************!*\
+  !*** ./src/images/maple-leaf.jpg ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/maple-leaf.d5c9ddd7.jpg";
+
+/***/ }),
+
 /***/ "./src/images/maples-logo.svg":
 /*!************************************!*\
   !*** ./src/images/maples-logo.svg ***!
@@ -1982,12 +2135,12 @@ module.exports = __webpack_require__.p + "static/media/maples-logo.f9a5a320.svg"
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! http */ "http");
 /* harmony import */ var http__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(http__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _server__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./server */ "./src/server.jsx");
+/* eslint-disable no-console */
 
 
-var app = __webpack_require__(/*! ./server */ "./src/server.js")["default"];
-
-var server = http__WEBPACK_IMPORTED_MODULE_0___default.a.createServer(app);
-var currentApp = app;
+var server = http__WEBPACK_IMPORTED_MODULE_0___default.a.createServer(_server__WEBPACK_IMPORTED_MODULE_1__["default"]);
+var currentApp = _server__WEBPACK_IMPORTED_MODULE_1__["default"];
 server.listen("3000" || false, function (error) {
   if (error) {
     console.log(error);
@@ -1998,11 +2151,13 @@ server.listen("3000" || false, function (error) {
 
 if (true) {
   console.log('✅  Server-side HMR Enabled!');
-  module.hot.accept(/*! ./server */ "./src/server.js", function(__WEBPACK_OUTDATED_DEPENDENCIES__) { (function () {
+  module.hot.accept(/*! ./server */ "./src/server.jsx", function(__WEBPACK_OUTDATED_DEPENDENCIES__) { /* harmony import */ _server__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./server */ "./src/server.jsx");
+(function () {
     console.log('🔁  HMR Reloading `./server`...');
 
     try {
-      app = __webpack_require__(/*! ./server */ "./src/server.js")["default"];
+      // eslint-disable-next-line global-require
+      app = __webpack_require__(/*! ./server */ "./src/server.jsx")["default"];
       server.removeListener('request', currentApp);
       server.on('request', app);
       currentApp = app;
@@ -2025,25 +2180,25 @@ if (true) {
 
 /***/ }),
 
-/***/ "./src/server.js":
-/*!***********************!*\
-  !*** ./src/server.js ***!
-  \***********************/
+/***/ "./src/server.jsx":
+/*!************************!*\
+  !*** ./src/server.jsx ***!
+  \************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./App */ "./src/App.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "react-router-dom");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_router_dom__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var express__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! express */ "express");
-/* harmony import */ var express__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(express__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var react_dom_server__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-dom/server */ "react-dom/server");
-/* harmony import */ var react_dom_server__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_dom_server__WEBPACK_IMPORTED_MODULE_4__);
-var _jsxFileName = "/home/chris/git/moonlight-maples/src/server.js";
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "react-router-dom");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_router_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var express__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! express */ "express");
+/* harmony import */ var express__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(express__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_dom_server__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-dom/server */ "react-dom/server");
+/* harmony import */ var react_dom_server__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_dom_server__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./App */ "./src/App.jsx");
+var _jsxFileName = "/home/chris/git/moonlight-maples/src/server.jsx";
 
 
 
@@ -2052,17 +2207,17 @@ var _jsxFileName = "/home/chris/git/moonlight-maples/src/server.js";
 
 var assets = __webpack_require__(/*! ./build/assets.json */ "./build/assets.json");
 
-var server = express__WEBPACK_IMPORTED_MODULE_3___default()();
-server.disable('x-powered-by').use(express__WEBPACK_IMPORTED_MODULE_3___default.a["static"]("/home/chris/git/moonlight-maples/public")).get('/*', function (req, res) {
+var server = express__WEBPACK_IMPORTED_MODULE_2___default()();
+server.disable('x-powered-by').use(express__WEBPACK_IMPORTED_MODULE_2___default.a["static"]("/home/chris/git/moonlight-maples/public")).get('/*', function (req, res) {
   var context = {};
-  var markup = Object(react_dom_server__WEBPACK_IMPORTED_MODULE_4__["renderToString"])(react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["StaticRouter"], {
+  var markup = Object(react_dom_server__WEBPACK_IMPORTED_MODULE_3__["renderToString"])(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["StaticRouter"], {
     context: context,
     location: req.url,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 16
     }
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_App__WEBPACK_IMPORTED_MODULE_0__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_App__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17
