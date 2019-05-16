@@ -5,6 +5,11 @@ import Footer from './Footer';
 import IndexPage from './IndexPage';
 import AboutPage from './AboutPage';
 import './App.scss';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
+
+library.add(fas, faEnvelope, faPhone);
 
 class App extends Component {
   render() {

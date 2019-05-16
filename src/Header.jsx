@@ -11,9 +11,11 @@ import {
 	NavItem,
 	NavLink,
 } from 'reactstrap';
+import { CSSTransitionGroup } from 'react-transition-group'
 import logoText from './images/logo-text.png';
 import logo from './images/maples-logo.svg';
-
+import './Header.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default class Header extends React.Component {
 	constructor(props) {
@@ -21,9 +23,11 @@ export default class Header extends React.Component {
 
 		this.state = {
 			isOpen: true,
+			fullHeader: true
 		};
 
 		this.toggle = this.toggle.bind(this);
+		this.shrinkHeader = this.shrinkHeader.bind(this);
 	}
 
 	toggle(screen) {
@@ -39,19 +43,38 @@ export default class Header extends React.Component {
 		}
 	}
 
+	shrinkHeader() {
+		const distFromTop = window.pageYOffset,
+			navbarHeight = document.getElementsByClassName('navbar')[0].offsetHeight;
+
+		if (distFromTop > navbarHeight) {
+			this.setState({
+				fullHeader: false
+			});
+		} else {
+			this.setState({
+				fullHeader: true
+			});
+		}
+	}
+
 	componentDidMount() {
-			let screen = document.getElementsByClassName('App');
-	    window.addEventListener('scroll', this.toggle(screen));
+	    window.addEventListener('scroll', this.shrinkHeader);
 	}
 
 	render() {
+		const { 
+			fullHeader,
+			isOpen
+		} = this.state;
+
 		return (
-			<Navbar onScroll={this.toggle} className="bg-primary shadow-lg sticky-top" light expand="md">
+			<Navbar onScroll={this.toggle} className={`bg-primary shadow-lg sticky-top header-state-${fullHeader ? 'open' : 'closed'}`} light expand="md">
 				<NavbarBrand href="/">
-					{this.state.isOpen ? null : <img width="200" src={logo} alt="Moonlight Maples Logo" /> }
+					<img width="120" className="header-logo-sub header-logo" src={logo} alt="Moonlight Maples Logo" />
 				</NavbarBrand>
 				<NavbarToggler onClick={this.toggle} />
-				<Collapse isOpen={this.state.isOpen} navbar>
+				<Collapse isOpen={isOpen} navbar>
 					<Nav className="mr-auto" navbar>
 						<NavItem className="pr-2">
 							<NavLink>
@@ -73,13 +96,13 @@ export default class Header extends React.Component {
 						</NavItem>
 					</Nav>
 					<Nav className="m-auto" navbar>
-						{this.state.isOpen ? <img width="200" src={logo} alt="Moonlight Maples Logo" /> : null}
+						<img width="200" className="header-logo header-logo-main" src={logo} alt="Moonlight Maples Logo" />
 					</Nav>
 					<Nav className="ml-auto" navbar>
 						<NavItem className="pr-2">
 							<a className="text-dark" href="mailto:moonlightmaples@yahoo.com">
 								<Typography variant="subtitle1">
-									<i className="far fa-envelope px-2" />
+									<FontAwesomeIcon icon="envelope" className="mx-2" size="lg" />
 										moonlightmaples@yahoo.com
 								</Typography>
 							</a>
@@ -87,7 +110,7 @@ export default class Header extends React.Component {
 						<NavItem>
 							<a className="text-dark" href="tel:8025982317">
 								<Typography variant="subtitle1">
-									<i className="fas fa-phone px-2" />
+									<FontAwesomeIcon icon="phone" className="mx-2" size="lg" />
 										(802) 598-2317
 								</Typography>
 							</a>
