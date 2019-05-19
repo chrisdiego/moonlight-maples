@@ -10,6 +10,7 @@ import {
 	Nav,
 	NavItem,
 	NavLink,
+	Container
 } from 'reactstrap';
 import { CSSTransitionGroup } from 'react-transition-group'
 import logoText from './images/logo-text.png';
@@ -70,53 +71,52 @@ export default class Header extends React.Component {
 
 		return (
 			<Navbar onScroll={this.toggle} className={`bg-primary shadow-lg sticky-top header-state-${fullHeader ? 'open' : 'closed'}`} light expand="md">
-				<NavbarBrand href="/">
-					<img width="120" className="header-logo-sub header-logo" src={logo} alt="Moonlight Maples Logo" />
-				</NavbarBrand>
 				<NavbarToggler onClick={this.toggle} />
-				<Collapse isOpen={isOpen} navbar>
-					<Nav className="mr-auto" navbar>
-						<NavItem className="pr-2">
-							<NavLink>
-								<Link to="/products">
-									<Button variant="contained">
-											Shop Products
-									</Button>
-								</Link>
-							</NavLink>
-						</NavItem>
-						<NavItem>
-							<NavLink>
-								<Link to="/about">
-									<Button variant="outlined">
-											About Us
-									</Button>
-								</Link>
-							</NavLink>
-						</NavItem>
-					</Nav>
-					<Nav className="m-auto" navbar>
-						<img width="200" className="header-logo header-logo-main" src={logo} alt="Moonlight Maples Logo" />
-					</Nav>
-					<Nav className="ml-auto" navbar>
-						<NavItem className="pr-2">
-							<a className="text-dark" href="mailto:moonlightmaples@yahoo.com">
-								<Typography variant="subtitle1">
-									<FontAwesomeIcon icon="envelope" className="mx-2" size="lg" />
-										moonlightmaples@yahoo.com
-								</Typography>
-							</a>
-						</NavItem>
-						<NavItem>
-							<a className="text-dark" href="tel:8025982317">
-								<Typography variant="subtitle1">
-									<FontAwesomeIcon icon="phone" className="mx-2" size="lg" />
-										(802) 598-2317
-								</Typography>
-							</a>
-						</NavItem>
-					</Nav>
-				</Collapse>
+				<Container>
+					<Collapse isOpen={isOpen} navbar>
+						<Nav navbar>
+							<NavItem className="pr-2">
+								<NavLink>
+									<Link to="/products">
+										<Button variant="contained">
+												Shop Products
+										</Button>
+									</Link>
+								</NavLink>
+							</NavItem>
+							<NavItem>
+								<NavLink>
+									<Link to="/about">
+										<Button variant="outlined">
+												About Us
+										</Button>
+									</Link>
+								</NavLink>
+							</NavItem>
+						</Nav>
+						<NavbarBrand href="/">
+							<img className="header-logo" src={logo} alt="Moonlight Maples Logo" />
+						</NavbarBrand>
+						<Nav className="flex-column" navbar>
+							<NavItem>
+								<a className="text-dark" href="mailto:moonlightmaples@yahoo.com">
+									<Typography variant="subtitle1">
+										<FontAwesomeIcon icon="envelope" className="mx-2" size="lg" />
+											moonlightmaples@yahoo.com
+									</Typography>
+								</a>
+							</NavItem>
+							<NavItem>
+								<a className="text-dark" href="tel:8025982317">
+									<Typography variant="subtitle1">
+										<FontAwesomeIcon icon="phone" className="mx-2" size="lg" />
+											(802) 598-2317
+									</Typography>
+								</a>
+							</NavItem>
+						</Nav>
+					</Collapse>
+				</Container>
 			</Navbar>
 		);
 	}

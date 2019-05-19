@@ -7,7 +7,7 @@ import products from './content/products';
 
 const featuredProducts = () => {
 	return (
-		<Row className="mb-4 featured-products"> 
+		<Row className="mb-4 featured-products mx-0"> 
 			<Col sm="2" />
 				{products.map(product => {
 					return (

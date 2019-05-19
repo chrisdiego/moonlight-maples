@@ -14,7 +14,7 @@ import logo from './images/maples-logo.svg';
 import './indexPage.scss';
 
 const IndexPage = props => (
-  <Container fluid className="text-center">
+  <Container fluid className="text-center p-0">
     <Row>
       <Col className="p-0 background-image shadow mb-4">
         <Jumbotron className="w-100 py-0" style={{ backgroundColor: 'transparent' }}>

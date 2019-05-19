@@ -23,7 +23,7 @@ module.exports =
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "35d11070c53284d4e18b";
+/******/ 	var hotCurrentHash = "9e8123a02e2f0fe4fc59";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -1225,7 +1225,7 @@ var _jsxFileName = "/home/chris/git/moonlight-maples/src/FeaturedProducts.jsx";
 
 var featuredProducts = function featuredProducts() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
-    className: "mb-4 featured-products",
+    className: "mb-4 featured-products mx-0",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
@@ -1517,129 +1517,115 @@ function (_React$Component) {
         expand: "md",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 72
-        }
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_10__["NavbarBrand"], {
-        href: "/",
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 73
         }
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("img", {
-        width: "120",
-        className: "header-logo-sub header-logo",
-        src: _images_maples_logo_svg__WEBPACK_IMPORTED_MODULE_13___default.a,
-        alt: "Moonlight Maples Logo",
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_10__["NavbarToggler"], {
+        onClick: this.toggle,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 74
         }
-      })), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_10__["NavbarToggler"], {
-        onClick: this.toggle,
+      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_10__["Container"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 75
+        }
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_10__["Collapse"], {
+        isOpen: isOpen,
+        navbar: true,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 76
         }
-      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_10__["Collapse"], {
-        isOpen: isOpen,
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_10__["Nav"], {
         navbar: true,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 77
         }
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_10__["Nav"], {
-        className: "mr-auto",
-        navbar: true,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 78
-        }
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_10__["NavItem"], {
         className: "pr-2",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79
+          lineNumber: 78
         }
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_10__["NavLink"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 80
+          lineNumber: 79
         }
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_9__["Link"], {
         to: "/products",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 81
+          lineNumber: 80
         }
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_7___default.a, {
         variant: "contained",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 82
+          lineNumber: 81
         }
       }, "Shop Products")))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_10__["NavItem"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 88
+          lineNumber: 87
         }
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_10__["NavLink"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 89
+          lineNumber: 88
         }
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_9__["Link"], {
         to: "/about",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 90
+          lineNumber: 89
         }
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_7___default.a, {
         variant: "outlined",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 91
+          lineNumber: 90
         }
-      }, "About Us"))))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_10__["Nav"], {
-        className: "m-auto",
-        navbar: true,
+      }, "About Us"))))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_10__["NavbarBrand"], {
+        href: "/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 98
+          lineNumber: 97
         }
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("img", {
-        width: "200",
-        className: "header-logo header-logo-main",
+        className: "header-logo",
         src: _images_maples_logo_svg__WEBPACK_IMPORTED_MODULE_13___default.a,
         alt: "Moonlight Maples Logo",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 99
+          lineNumber: 98
         }
       })), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_10__["Nav"], {
-        className: "ml-auto",
+        className: "flex-column",
         navbar: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 101
+          lineNumber: 100
         }
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_10__["NavItem"], {
-        className: "pr-2",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 102
+          lineNumber: 101
         }
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
         className: "text-dark",
         href: "mailto:moonlightmaples@yahoo.com",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 103
+          lineNumber: 102
         }
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_8___default.a, {
         variant: "subtitle1",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 104
+          lineNumber: 103
         }
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_15__["FontAwesomeIcon"], {
         icon: "envelope",
@@ -1647,25 +1633,25 @@ function (_React$Component) {
         size: "lg",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 105
+          lineNumber: 104
         }
       }), "moonlightmaples@yahoo.com"))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_10__["NavItem"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 110
+          lineNumber: 109
         }
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
         className: "text-dark",
         href: "tel:8025982317",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 111
+          lineNumber: 110
         }
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_8___default.a, {
         variant: "subtitle1",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 112
+          lineNumber: 111
         }
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_15__["FontAwesomeIcon"], {
         icon: "phone",
@@ -1673,9 +1659,9 @@ function (_React$Component) {
         size: "lg",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 113
+          lineNumber: 112
         }
-      }), "(802) 598-2317"))))));
+      }), "(802) 598-2317")))))));
     }
   }]);
 
@@ -1740,7 +1726,7 @@ var _jsxFileName = "/home/chris/git/moonlight-maples/src/IndexPage.jsx";
 var IndexPage = function IndexPage(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], {
     fluid: true,
-    className: "text-center",
+    className: "text-center p-0",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17
@@ -2174,7 +2160,7 @@ module.exports = __webpack_require__.p + "static/media/maple-leaf.d5c9ddd7.jpg";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/media/maples-logo.f9a5a320.svg";
+module.exports = __webpack_require__.p + "static/media/maples-logo.2bea19e5.svg";
 
 /***/ }),
 

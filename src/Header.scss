@@ -1,20 +1,13 @@
 .navbar .header-logo {
-	transition: visibility 0s, opacity 0.5s linear;
+	transition: width 0.1s linear;
 }
 
-.navbar.header-state-open .header-logo-sub,
-.navbar.header-state-closed .header-logo-main {
-	visibility: hidden;
-	opacity: 0;
-	height: 0;
-	width: 0;
+.navbar.header-state-open .header-logo {
+	width: 160px;
 }
 
-.navbar.header-state-closed .header-logo-sub,
-.navbar.header-state-open .header-logo-main {
-	visibility: visible;
-	opacity: 1;
-	height: auto;
+.navbar.header-state-closed .header-logo {
+	width: 100px;
 }
 
 //I really don't like this solution but it's staying until I can find something better
