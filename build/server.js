@@ -23,7 +23,7 @@ module.exports =
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "9e8123a02e2f0fe4fc59";
+/******/ 	var hotCurrentHash = "a16d3856b4b150254364";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -760,7 +760,7 @@ module.exports =
 /*! exports provided: client, , default */
 /***/ (function(module) {
 
-module.exports = {"client":{"js":"http://localhost:3001/static/js/bundle.js"},"":{"jpg":["http://localhost:3001/static/media/image1.991d2eed.jpg","http://localhost:3001/static/media/info-highlight.d6752937.jpg","http://localhost:3001/static/media/maple-leaf.d5c9ddd7.jpg"],"svg":"http://localhost:3001/static/media/maples-logo.f9a5a320.svg"}};
+module.exports = {"client":{"js":"http://localhost:3001/static/js/bundle.js"},"":{"jpg":["http://localhost:3001/static/media/image1.991d2eed.jpg","http://localhost:3001/static/media/info-highlight.d6752937.jpg","http://localhost:3001/static/media/maple-leaf.d5c9ddd7.jpg"],"svg":"http://localhost:3001/static/media/maples-logo.2bea19e5.svg"}};
 
 /***/ }),
 
@@ -946,7 +946,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_Card__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Card__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/CardContent */ "@material-ui/core/CardContent");
 /* harmony import */ var _material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _images_image1_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./images/image1.jpg */ "./src/images/image1.jpg");
+/* harmony import */ var _images_image1_jpg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_images_image1_jpg__WEBPACK_IMPORTED_MODULE_5__);
 var _jsxFileName = "/home/chris/git/moonlight-maples/src/AboutPage.jsx";
+
 
 
 
@@ -957,19 +960,20 @@ var AboutPage = function AboutPage() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 9
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
     className: "mb-4",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 10
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     sm: "12",
+    className: "about-header-image",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 11
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
     component: "h1",
@@ -977,99 +981,106 @@ var AboutPage = function AboutPage() {
     className: "m-4",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 12
     }
-  }, "About Us")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    sm: "9",
+  }, "About Us"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _images_image1_jpg__WEBPACK_IMPORTED_MODULE_5___default.a,
+    className: "mw-100",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 15
+    }
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
+    sm: "9",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
     component: "h2",
     variant: "h5",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 18
     }
   }, "About Moonlight Maples"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
     variant: "subtitle1",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 21
     }
   }, "This is a brief paragraph about the origins of Moonlight Maples, the owners of the business, how long they've been in business, and the scale of the current operation.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     sm: "3",
     className: "border-left",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 25
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Card__WEBPACK_IMPORTED_MODULE_3___default.a, {
     className: "shadow-sm mb-4",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 26
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_4___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 27
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
     component: "h2",
     variant: "h5",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 28
     }
   }, "Contact Us"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "text-dark",
     href: "mailto:moonlightmaples@yahoo.com",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 31
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
     component: "p",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 32
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "far fa-envelope px-2",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 33
     }
   }), "moonlightmaples@yahoo.com")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "text-dark",
     href: "tel:8025982317",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 37
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
     variant: "subtitle1",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 38
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fas fa-phone px-2",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 39
     }
   }), "(802) 598-2317")))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 47
     }
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 48
     }
   }));
 };
@@ -1225,29 +1236,23 @@ var _jsxFileName = "/home/chris/git/moonlight-maples/src/FeaturedProducts.jsx";
 
 var featuredProducts = function featuredProducts() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
-    className: "mb-4 featured-products mx-0",
+    className: "mb-4 featured-products mx-auto",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
     }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    sm: "2",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    }
-  }), _content_products__WEBPACK_IMPORTED_MODULE_3__["default"].map(function (product) {
+  }, _content_products__WEBPACK_IMPORTED_MODULE_3__["default"].map(function (product) {
     return product.featured ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-      sm: "2",
+      sm: "3",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 15
+        lineNumber: 14
       }
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Card"], {
       className: "shadow-md mb-3 rounded",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 16
+        lineNumber: 15
       }
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardImg"], {
       top: true,
@@ -1256,33 +1261,33 @@ var featuredProducts = function featuredProducts() {
       alt: "Maple Syrup",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 17
+        lineNumber: 16
       }
     }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardBody"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 18
+        lineNumber: 17
       }
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardTitle"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 19
+        lineNumber: 18
       }
     }, product.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardSubtitle"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 20
+        lineNumber: 19
       }
     }, "???"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardText"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 21
+        lineNumber: 20
       }
     }, product.description), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_2___default.a, {
       variant: "contained",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 22
+        lineNumber: 21
       }
     }, "View")))) : null;
   }));
@@ -1460,7 +1465,7 @@ function (_React$Component) {
 
     _this = _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2___default()(this, _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3___default()(Header).call(this, props));
     _this.state = {
-      isOpen: true,
+      isOpen: false,
       fullHeader: true
     };
     _this.toggle = _this.toggle.bind(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_this));
@@ -1470,18 +1475,12 @@ function (_React$Component) {
 
   _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1___default()(Header, [{
     key: "toggle",
-    value: function toggle(screen) {
-      console.log(screen.scrollTop);
-
-      if (screen.scrollTop == 0) {
-        this.setState({
-          isOpen: true
-        });
-      } else {
-        this.setState({
-          isOpen: false
-        });
-      }
+    value: function toggle() {
+      this.setState(function (state) {
+        return {
+          isOpen: !state.isOpen
+        };
+      });
     }
   }, {
     key: "shrinkHeader",
@@ -1502,7 +1501,11 @@ function (_React$Component) {
   }, {
     key: "componentDidMount",
     value: function componentDidMount() {
-      window.addEventListener('scroll', this.shrinkHeader);
+      var screenWidth = window.matchMedia("(min-width: 768px)");
+
+      if (screenWidth.matches) {
+        window.addEventListener('scroll', this.shrinkHeader);
+      }
     }
   }, {
     key: "render",
@@ -1517,82 +1520,100 @@ function (_React$Component) {
         expand: "md",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 73
+          lineNumber: 67
         }
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_10__["NavbarToggler"], {
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_10__["NavbarBrand"], {
+        href: "/",
+        className: "m-0 p-0 d-md-none",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 68
+        }
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("img", {
+        className: "header-logo",
+        src: _images_maples_logo_svg__WEBPACK_IMPORTED_MODULE_13___default.a,
+        height: "80vh",
+        alt: "Moonlight Maples Logo",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 69
+        }
+      })), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_10__["NavbarToggler"], {
         onClick: this.toggle,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 74
+          lineNumber: 71
         }
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_10__["Container"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75
+          lineNumber: 72
         }
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_10__["Collapse"], {
         isOpen: isOpen,
         navbar: true,
+        className: "justify-content-between mt-2",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 76
+          lineNumber: 73
         }
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_10__["Nav"], {
         navbar: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 77
+          lineNumber: 74
         }
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_10__["NavItem"], {
         className: "pr-2",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 78
+          lineNumber: 75
         }
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_10__["NavLink"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79
+          lineNumber: 76
         }
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_9__["Link"], {
         to: "/products",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 80
+          lineNumber: 77
         }
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_7___default.a, {
         variant: "contained",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 81
+          lineNumber: 78
         }
       }, "Shop Products")))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_10__["NavItem"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 87
+          lineNumber: 84
         }
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_10__["NavLink"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 88
+          lineNumber: 85
         }
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_9__["Link"], {
         to: "/about",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 89
+          lineNumber: 86
         }
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_7___default.a, {
         variant: "outlined",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 90
+          lineNumber: 87
         }
       }, "About Us"))))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_10__["NavbarBrand"], {
         href: "/",
+        className: "m-0 d-none d-md-block",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 97
+          lineNumber: 94
         }
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("img", {
         className: "header-logo",
@@ -1600,66 +1621,67 @@ function (_React$Component) {
         alt: "Moonlight Maples Logo",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 98
+          lineNumber: 95
         }
       })), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_10__["Nav"], {
-        className: "flex-column",
+        className: "flex-column mr-md-5",
         navbar: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 100
+          lineNumber: 97
         }
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_10__["NavItem"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 101
+          lineNumber: 98
         }
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
         className: "text-dark",
         href: "mailto:moonlightmaples@yahoo.com",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 102
+          lineNumber: 99
         }
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_8___default.a, {
         variant: "subtitle1",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 103
+          lineNumber: 100
         }
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_15__["FontAwesomeIcon"], {
         icon: "envelope",
         className: "mx-2",
-        size: "lg",
+        size: "md",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 104
+          lineNumber: 101
         }
       }), "moonlightmaples@yahoo.com"))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_10__["NavItem"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 109
+          lineNumber: 106
         }
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
         className: "text-dark",
         href: "tel:8025982317",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 110
+          lineNumber: 107
         }
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_8___default.a, {
         variant: "subtitle1",
+        component: "h1",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 111
+          lineNumber: 108
         }
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_15__["FontAwesomeIcon"], {
         icon: "phone",
         className: "mx-2",
-        size: "lg",
+        size: "md",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 112
+          lineNumber: 109
         }
       }), "(802) 598-2317")))))));
     }
@@ -1732,6 +1754,7 @@ var IndexPage = function IndexPage(props) {
       lineNumber: 17
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
+    className: "m-0",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 18
@@ -1743,7 +1766,7 @@ var IndexPage = function IndexPage(props) {
       lineNumber: 19
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Jumbotron"], {
-    className: "w-100 py-0",
+    className: "w-100 py-0 text-center h-100 d-flex",
     style: {
       backgroundColor: 'transparent'
     },
@@ -1752,6 +1775,7 @@ var IndexPage = function IndexPage(props) {
       lineNumber: 20
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "m-auto",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 21
@@ -1782,20 +1806,27 @@ var IndexPage = function IndexPage(props) {
       fileName: _jsxFileName,
       lineNumber: 27
     }
-  }, "Explore our Products")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_FeaturedProducts__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, "Explore our Products")))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
+    className: "m-0",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 33
     }
-  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_FeaturedProducts__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 34
+    }
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
+    className: "m-0",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 37
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     style: {
@@ -1804,12 +1835,12 @@ var IndexPage = function IndexPage(props) {
     className: "rounded p-4 bg-white shadow-lg intro-highlight position-relative",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 38
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 39
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     xs: {
@@ -1822,37 +1853,37 @@ var IndexPage = function IndexPage(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 40
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Hidden__WEBPACK_IMPORTED_MODULE_4___default.a, {
     only: "xs",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 41
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
     variant: "h4",
     gutterBottom: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 42
     }
   }, "Who we are")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
     variant: "body1",
     align: "left",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 46
     }
   }, "Maple syrup is a syrup usually made from the xylem sap of sugar maple, red maple, or black maple trees, although it can also be made from other maple species. In cold climates, these trees store starch in their trunks and roots before winter; the starch is then converted to sugar that rises in the sap in late winter and early spring. Maple trees are tapped by drilling holes into their trunks and collecting the exuded sap, which is processed by heating to evaporate much of the water, leaving the concentrated syrup.", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 48
     }
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 49
     }
   }), "Maple syrup was first collected and used by the indigenous peoples of North America, and the practice was adopted by European settlers, who gradually refined production methods. Technological improvements in the 1970s further refined syrup processing. The Canadian province of Quebec is by far the largest producer, responsible for 70 percent of the world's output; Canadian exports of maple syrup in 2016 were C$ 487 million (about US$ 360 million), with Quebec accounting for some 90 percent of this total.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     xs: {
@@ -1864,20 +1895,20 @@ var IndexPage = function IndexPage(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 53
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Hidden__WEBPACK_IMPORTED_MODULE_4___default.a, {
     smUp: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 54
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
     variant: "h4",
     gutterBottom: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 55
     }
   }, "Who we are")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: _images_info_highlight_jpg__WEBPACK_IMPORTED_MODULE_7___default.a,
@@ -1886,7 +1917,7 @@ var IndexPage = function IndexPage(props) {
     alt: "",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 59
     }
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
     className: "mt-2",
@@ -1894,12 +1925,12 @@ var IndexPage = function IndexPage(props) {
     gutterBottom: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 60
     }
   }, "Robbie Morrill and Ruth Chiappinelli", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 62
     }
   }), ' ', "Maple King & Queen, 2010")))))));
 };

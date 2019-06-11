@@ -23,7 +23,7 @@ export default class Header extends React.Component {
 		super(props);
 
 		this.state = {
-			isOpen: true,
+			isOpen: false,
 			fullHeader: true
 		};
 
@@ -31,17 +31,8 @@ export default class Header extends React.Component {
 		this.shrinkHeader = this.shrinkHeader.bind(this);
 	}
 
-	toggle(screen) {
-		console.log(screen.scrollTop);
-		if(screen.scrollTop==0){
-		  this.setState({
-				isOpen: true,
-			});
-		} else {
-			this.setState({
-				isOpen: false,
-			});
-		}
+	toggle() {
+	  this.setState(state => ({ isOpen: !state.isOpen }));
 	}
 
 	shrinkHeader() {
@@ -60,7 +51,10 @@ export default class Header extends React.Component {
 	}
 
 	componentDidMount() {
-	    window.addEventListener('scroll', this.shrinkHeader);
+		let screenWidth = window.matchMedia("(min-width: 768px)");
+		if (screenWidth.matches) {
+			window.addEventListener('scroll', this.shrinkHeader);
+		}
 	}
 
 	render() {
@@ -71,9 +65,12 @@ export default class Header extends React.Component {
 
 		return (
 			<Navbar onScroll={this.toggle} className={`bg-primary shadow-lg sticky-top header-state-${fullHeader ? 'open' : 'closed'}`} light expand="md">
+				<NavbarBrand href="/" className="m-0 p-0 d-md-none">
+					<img className="header-logo" src={logo} height="80vh" alt="Moonlight Maples Logo" />
+				</NavbarBrand>
 				<NavbarToggler onClick={this.toggle} />
 				<Container>
-					<Collapse isOpen={isOpen} navbar>
+					<Collapse isOpen={isOpen} navbar className="justify-content-between mt-2">
 						<Nav navbar>
 							<NavItem className="pr-2">
 								<NavLink>
@@ -94,22 +91,22 @@ export default class Header extends React.Component {
 								</NavLink>
 							</NavItem>
 						</Nav>
-						<NavbarBrand href="/">
+						<NavbarBrand href="/" className="m-0 d-none d-md-block">
 							<img className="header-logo" src={logo} alt="Moonlight Maples Logo" />
 						</NavbarBrand>
-						<Nav className="flex-column" navbar>
+						<Nav className="flex-column mr-md-5" navbar>
 							<NavItem>
 								<a className="text-dark" href="mailto:moonlightmaples@yahoo.com">
 									<Typography variant="subtitle1">
-										<FontAwesomeIcon icon="envelope" className="mx-2" size="lg" />
+										<FontAwesomeIcon icon="envelope" className="mx-2" size="md" />
 											moonlightmaples@yahoo.com
 									</Typography>
 								</a>
 							</NavItem>
 							<NavItem>
 								<a className="text-dark" href="tel:8025982317">
-									<Typography variant="subtitle1">
-										<FontAwesomeIcon icon="phone" className="mx-2" size="lg" />
+									<Typography variant="subtitle1" component="h1">
+										<FontAwesomeIcon icon="phone" className="mx-2" size="md" />
 											(802) 598-2317
 									</Typography>
 								</a>

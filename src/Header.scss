@@ -3,20 +3,22 @@
 }
 
 .navbar.header-state-open .header-logo {
-	width: 160px;
+	width: 120px;
 }
 
 .navbar.header-state-closed .header-logo {
-	width: 100px;
+	width: 80px;
 }
 
 //I really don't like this solution but it's staying until I can find something better
-.navbar.header-state-open {
-	max-height: 216px;
-}
+@media screen and (min-width: 768px) {
+	.navbar.header-state-open {
+		max-height: 216px;
+	}
 
-.navbar.header-state-closed {
-	max-height: 146px;
+	.navbar.header-state-closed {
+		max-height: 146px;
+	}
 }
 
 .navbar {

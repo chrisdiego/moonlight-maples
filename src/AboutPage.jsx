@@ -3,14 +3,16 @@ import { Container, Row, Col } from 'reactstrap';
 import Typography from '@material-ui/core/Typography';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
+import image1 from './images/image1.jpg';
 
 const AboutPage = () => (
   <Container>
     <Row className="mb-4">
-      <Col sm="12">
+      <Col sm="12" className="about-header-image">
         <Typography component="h1" variant="h3" className="m-4">
-						About Us
+          About Us
         </Typography>
+        <img src={image1} className="mw-100" />
       </Col>
       <Col sm="9">
         <Typography component="h2" variant="h5">

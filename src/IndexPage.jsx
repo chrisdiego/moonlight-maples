@@ -15,10 +15,10 @@ import './indexPage.scss';
 
 const IndexPage = props => (
   <Container fluid className="text-center p-0">
-    <Row>
+    <Row className="m-0">
       <Col className="p-0 background-image shadow mb-4">
-        <Jumbotron className="w-100 py-0" style={{ backgroundColor: 'transparent' }}>
-          <div>
+        <Jumbotron className="w-100 py-0 text-center h-100 d-flex" style={{ backgroundColor: 'transparent' }}>
+          <div className="m-auto">
             <Container className="rounded p-4 bg-secondary">
               <Typography component="h2" variant="h4" gutterBottom>
 					Serving the Vermont region and beyond with handcrafted maple products since 1999
@@ -28,13 +28,12 @@ const IndexPage = props => (
             </Container>
           </div>
         </Jumbotron>
-
-        <FeaturedProducts />
-
       </Col>
     </Row>
-
-    <Row>
+    <Row className="m-0">
+      <FeaturedProducts />
+    </Row>
+    <Row className="m-0">
       <Col>
         <div style={{ zIndex: '2' }} className="rounded p-4 bg-white shadow-lg intro-highlight position-relative">
           <Row>
