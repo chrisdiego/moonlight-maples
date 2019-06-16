@@ -4,3 +4,11 @@ $primary-action: #e2f1f8;
 
 @import "~bootstrap/scss/bootstrap";
 
+.container-1600 {
+	max-width: 1600px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}

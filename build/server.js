@@ -23,7 +23,7 @@ module.exports =
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "a16d3856b4b150254364";
+/******/ 	var hotCurrentHash = "2d6f881d4c93903a7d37";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -946,8 +946,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_Card__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Card__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/CardContent */ "@material-ui/core/CardContent");
 /* harmony import */ var _material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _images_image1_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./images/image1.jpg */ "./src/images/image1.jpg");
-/* harmony import */ var _images_image1_jpg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_images_image1_jpg__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _AboutPageRow__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./AboutPageRow */ "./src/AboutPageRow.jsx");
+/* harmony import */ var _images_image1_jpg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./images/image1.jpg */ "./src/images/image1.jpg");
+/* harmony import */ var _images_image1_jpg__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_images_image1_jpg__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _AboutPage_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./AboutPage.scss */ "./src/AboutPage.scss");
+/* harmony import */ var _AboutPage_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_AboutPage_scss__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _content_aboutPageRows__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./content/aboutPageRows */ "./src/content/aboutPageRows.js");
 var _jsxFileName = "/home/chris/git/moonlight-maples/src/AboutPage.jsx";
 
 
@@ -956,136 +960,138 @@ var _jsxFileName = "/home/chris/git/moonlight-maples/src/AboutPage.jsx";
 
 
 
+
+
+
 var AboutPage = function AboutPage() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container-1600",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 13
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
     className: "mb-4",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 14
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     sm: "12",
-    className: "about-header-image",
+    className: "about-header-image mt-5 align-items-center d-flex",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    component: "h1",
+    variant: "h3",
+    className: "w-100 text-center p-4 text-white",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    }
+  }, "About Us"))), _content_aboutPageRows__WEBPACK_IMPORTED_MODULE_8__["default"].map(function (row) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_AboutPageRow__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      imageSrc: row.imageSrc,
+      imageAlt: row.imageAlt,
+      contentTitle: row.contentTitle,
+      contentText: row.contentText,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 22
+      }
+    });
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (AboutPage);
+
+/***/ }),
+
+/***/ "./src/AboutPage.scss":
+/*!****************************!*\
+  !*** ./src/AboutPage.scss ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "./src/AboutPageRow.jsx":
+/*!******************************!*\
+  !*** ./src/AboutPageRow.jsx ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactstrap */ "reactstrap");
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/Typography */ "@material-ui/core/Typography");
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _images_image1_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./images/image1.jpg */ "./src/images/image1.jpg");
+/* harmony import */ var _images_image1_jpg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_images_image1_jpg__WEBPACK_IMPORTED_MODULE_3__);
+var _jsxFileName = "/home/chris/git/moonlight-maples/src/AboutPageRow.jsx";
+
+
+
+
+
+var AboutPageRow = function AboutPageRow(_ref) {
+  var imageSrc = _ref.imageSrc,
+      imageAlt = _ref.imageAlt,
+      contentTitle = _ref.contentTitle,
+      contentText = _ref.contentText;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
+    sm: "6",
+    className: "about-page-row-image pl-0",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "mw-100",
+    src: imageSrc,
+    alt: imageAlt,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    }
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
+    sm: "6",
+    className: "about-page-row-content pr-0",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    component: "h1",
-    variant: "h3",
-    className: "m-4",
+    component: "h2",
+    variant: "h5",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
     }
-  }, "About Us"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _images_image1_jpg__WEBPACK_IMPORTED_MODULE_5___default.a,
-    className: "mw-100",
+  }, contentTitle), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    variant: "subtitle1",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 15
     }
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    sm: "9",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    component: "h2",
-    variant: "h5",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    }
-  }, "About Moonlight Maples"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    variant: "subtitle1",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21
-    }
-  }, "This is a brief paragraph about the origins of Moonlight Maples, the owners of the business, how long they've been in business, and the scale of the current operation.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    sm: "3",
-    className: "border-left",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Card__WEBPACK_IMPORTED_MODULE_3___default.a, {
-    className: "shadow-sm mb-4",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_4___default.a, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    component: "h2",
-    variant: "h5",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28
-    }
-  }, "Contact Us"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "text-dark",
-    href: "mailto:moonlightmaples@yahoo.com",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 31
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    component: "p",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "far fa-envelope px-2",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33
-    }
-  }), "moonlightmaples@yahoo.com")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "text-dark",
-    href: "tel:8025982317",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    variant: "subtitle1",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fas fa-phone px-2",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39
-    }
-  }), "(802) 598-2317")))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 47
-    }
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 48
-    }
-  }));
+  }, contentText)));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (AboutPage);
+/* harmony default export */ __webpack_exports__["default"] = (AboutPageRow);
 
 /***/ }),
 
@@ -2003,6 +2009,28 @@ var LinkList = function LinkList(props) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (LinkList);
+
+/***/ }),
+
+/***/ "./src/content/aboutPageRows.js":
+/*!**************************************!*\
+  !*** ./src/content/aboutPageRows.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _images_image1_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../images/image1.jpg */ "./src/images/image1.jpg");
+/* harmony import */ var _images_image1_jpg__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_images_image1_jpg__WEBPACK_IMPORTED_MODULE_0__);
+
+var aboutPageRows = [{
+  imageSrc: _images_image1_jpg__WEBPACK_IMPORTED_MODULE_0___default.a,
+  imageAlt: "Placeholder image 1",
+  contentTitle: "This is a title!",
+  contentText: "This is some text that is in context with the title and the image!"
+}];
+/* harmony default export */ __webpack_exports__["default"] = (aboutPageRows);
 
 /***/ }),
 
