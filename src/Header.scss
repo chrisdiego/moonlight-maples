@@ -7,7 +7,7 @@
 }
 
 .navbar.header-state-closed .header-logo {
-	width: 80px;
+	width: 60px;
 }
 
 //I really don't like this solution but it's staying until I can find something better
@@ -17,7 +17,7 @@
 	}
 
 	.navbar.header-state-closed {
-		max-height: 146px;
+		max-height: 90px;
 	}
 }
 

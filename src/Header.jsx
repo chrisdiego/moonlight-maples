@@ -74,7 +74,7 @@ export default class Header extends React.Component {
 						<Nav navbar>
 							<NavItem className="pr-2">
 								<NavLink>
-									<Link to="/products">
+									<Link to="/products" onClick={this.toggle}>
 										<Button variant="contained">
 												Shop Products
 										</Button>
@@ -83,7 +83,7 @@ export default class Header extends React.Component {
 							</NavItem>
 							<NavItem>
 								<NavLink>
-									<Link to="/about">
+									<Link to="/about" onClick={this.toggle}>
 										<Button variant="outlined">
 												About Us
 										</Button>

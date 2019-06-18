@@ -23,7 +23,7 @@ module.exports =
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "2d6f881d4c93903a7d37";
+/******/ 	var hotCurrentHash = "42e45370666f8994d5a1";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -971,14 +971,14 @@ var AboutPage = function AboutPage() {
       lineNumber: 13
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
-    className: "mb-4",
+    className: "mb-4 shadow-lg",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 14
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     sm: "12",
-    className: "about-header-image mt-5 align-items-center d-flex",
+    className: "about-header-image mt-md-5 align-items-center d-flex",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 15
@@ -991,17 +991,20 @@ var AboutPage = function AboutPage() {
       fileName: _jsxFileName,
       lineNumber: 16
     }
-  }, "About Us"))), _content_aboutPageRows__WEBPACK_IMPORTED_MODULE_8__["default"].map(function (row) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_AboutPageRow__WEBPACK_IMPORTED_MODULE_5__["default"], {
-      imageSrc: row.imageSrc,
-      imageAlt: row.imageAlt,
-      contentTitle: row.contentTitle,
-      contentText: row.contentText,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 22
-      }
-    });
+  }, "About Us"))), _content_aboutPageRows__WEBPACK_IMPORTED_MODULE_8__["default"].map(function (row, i) {
+    return (//'alternate' swaps the order of the image/text for each row.  If it's even/0 index, image on left, if it's odd image on right
+      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_AboutPageRow__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        imageSrc: row.imageSrc,
+        imageAlt: row.imageAlt,
+        contentTitle: row.contentTitle,
+        contentText: row.contentText,
+        alternate: i % 2 == 0 || i == 0 ? true : false,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 23
+        }
+      })
+    );
   }));
 };
 
@@ -1047,21 +1050,26 @@ var AboutPageRow = function AboutPageRow(_ref) {
   var imageSrc = _ref.imageSrc,
       imageAlt = _ref.imageAlt,
       contentTitle = _ref.contentTitle,
-      contentText = _ref.contentText;
+      contentText = _ref.contentText,
+      alternate = _ref.alternate;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
+    className: "mb-5",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    sm: "6",
-    className: "about-page-row-image pl-0",
+    sm: {
+      size: 6,
+      order: alternate ? 1 : 2
+    },
+    className: "about-page-row-image p-0 pr-md-5",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "mw-100",
+    className: "mw-100 shadow-md",
     src: imageSrc,
     alt: imageAlt,
     __source: {
@@ -1069,8 +1077,11 @@ var AboutPageRow = function AboutPageRow(_ref) {
       lineNumber: 9
     }
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    sm: "6",
-    className: "about-page-row-content pr-0",
+    sm: {
+      size: 6,
+      order: alternate ? 2 : 1
+    },
+    className: "about-page-row-content p-0 pl-md-5",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11
@@ -1088,7 +1099,12 @@ var AboutPageRow = function AboutPageRow(_ref) {
       fileName: _jsxFileName,
       lineNumber: 15
     }
-  }, contentText)));
+  }, contentText)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    }
+  }));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (AboutPageRow);
@@ -1122,12 +1138,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Footer */ "./src/Footer.jsx");
 /* harmony import */ var _IndexPage__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./IndexPage */ "./src/IndexPage.jsx");
 /* harmony import */ var _AboutPage__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./AboutPage */ "./src/AboutPage.jsx");
-/* harmony import */ var _App_scss__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./App.scss */ "./src/App.scss");
-/* harmony import */ var _App_scss__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_App_scss__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @fortawesome/fontawesome-svg-core */ "@fortawesome/fontawesome-svg-core");
-/* harmony import */ var _fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "@fortawesome/free-solid-svg-icons");
-/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _ProductsPage__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./ProductsPage */ "./src/ProductsPage.js");
+/* harmony import */ var _App_scss__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./App.scss */ "./src/App.scss");
+/* harmony import */ var _App_scss__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_App_scss__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @fortawesome/fontawesome-svg-core */ "@fortawesome/fontawesome-svg-core");
+/* harmony import */ var _fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "@fortawesome/free-solid-svg-icons");
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_14__);
 
 
 
@@ -1144,7 +1161,8 @@ var _jsxFileName = "/home/chris/git/moonlight-maples/src/App.jsx";
 
 
 
-_fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_12__["library"].add(_fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["fas"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faEnvelope"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faPhone"]);
+
+_fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_13__["library"].add(_fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_14__["fas"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_14__["faEnvelope"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_14__["faPhone"]);
 
 var App =
 /*#__PURE__*/
@@ -1164,17 +1182,17 @@ function (_Component) {
         className: "App",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17
+          lineNumber: 18
         }
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_7__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 18
+          lineNumber: 19
         }
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Switch"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 19
+          lineNumber: 20
         }
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
         path: "/",
@@ -1182,19 +1200,26 @@ function (_Component) {
         component: _IndexPage__WEBPACK_IMPORTED_MODULE_9__["default"],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
+          lineNumber: 21
         }
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
         path: "/about",
         component: _AboutPage__WEBPACK_IMPORTED_MODULE_10__["default"],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21
+          lineNumber: 22
+        }
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
+        path: "/products",
+        component: _ProductsPage__WEBPACK_IMPORTED_MODULE_11__["default"],
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 23
         }
       })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_8__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23
+          lineNumber: 25
         }
       }));
     }
@@ -1582,6 +1607,7 @@ function (_React$Component) {
         }
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_9__["Link"], {
         to: "/products",
+        onClick: this.toggle,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 77
@@ -1604,6 +1630,7 @@ function (_React$Component) {
         }
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_9__["Link"], {
         to: "/about",
+        onClick: this.toggle,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 86
@@ -2012,6 +2039,48 @@ var LinkList = function LinkList(props) {
 
 /***/ }),
 
+/***/ "./src/ProductsPage.js":
+/*!*****************************!*\
+  !*** ./src/ProductsPage.js ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactstrap */ "reactstrap");
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/home/chris/git/moonlight-maples/src/ProductsPage.js";
+
+ //import ProductsFilters from './ProductsFilters';
+//import ProductsList from './ProductsList';
+
+var ProductsPage = function ProductsPage() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container-1600",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ProductsFilters, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    }
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ProductsList, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    }
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (ProductsPage);
+
+/***/ }),
+
 /***/ "./src/content/aboutPageRows.js":
 /*!**************************************!*\
   !*** ./src/content/aboutPageRows.js ***!
@@ -2025,6 +2094,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _images_image1_jpg__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_images_image1_jpg__WEBPACK_IMPORTED_MODULE_0__);
 
 var aboutPageRows = [{
+  imageSrc: _images_image1_jpg__WEBPACK_IMPORTED_MODULE_0___default.a,
+  imageAlt: "Placeholder image 1",
+  contentTitle: "This is a title!",
+  contentText: "This is some text that is in context with the title and the image!"
+}, {
+  imageSrc: _images_image1_jpg__WEBPACK_IMPORTED_MODULE_0___default.a,
+  imageAlt: "Placeholder image 1",
+  contentTitle: "This is a title!",
+  contentText: "This is some text that is in context with the title and the image!"
+}, {
   imageSrc: _images_image1_jpg__WEBPACK_IMPORTED_MODULE_0___default.a,
   imageAlt: "Placeholder image 1",
   contentTitle: "This is a title!",

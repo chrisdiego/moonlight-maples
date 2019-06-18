@@ -6,6 +6,18 @@ const aboutPageRows = [
 		imageAlt: "Placeholder image 1",
 		contentTitle: "This is a title!",
 		contentText: "This is some text that is in context with the title and the image!"
+	},
+	{
+		imageSrc: image1,
+		imageAlt: "Placeholder image 1",
+		contentTitle: "This is a title!",
+		contentText: "This is some text that is in context with the title and the image!"
+	},
+	{
+		imageSrc: image1,
+		imageAlt: "Placeholder image 1",
+		contentTitle: "This is a title!",
+		contentText: "This is some text that is in context with the title and the image!"
 	}
 ];
 

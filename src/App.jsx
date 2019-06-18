@@ -4,6 +4,7 @@ import Header from './Header';
 import Footer from './Footer';
 import IndexPage from './IndexPage';
 import AboutPage from './AboutPage';
+import ProductsPage from './ProductsPage';
 import './App.scss';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
@@ -19,6 +20,7 @@ class App extends Component {
         <Switch>
           <Route path="/" exact component={IndexPage} />
           <Route path="/about" component={AboutPage} />
+          <Route path="/products" component={ProductsPage} />
         </Switch>
         <Footer />
       </div>
