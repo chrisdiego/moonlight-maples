@@ -23,7 +23,7 @@ module.exports =
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "42e45370666f8994d5a1";
+/******/ 	var hotCurrentHash = "61f915ecb50b5cee83e2";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -1258,8 +1258,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/Button */ "@material-ui/core/Button");
 /* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _content_products__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./content/products */ "./src/content/products.js");
+/* harmony import */ var _Product__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Product */ "./src/Product.js");
+/* harmony import */ var _content_products__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./content/products */ "./src/content/products.js");
 var _jsxFileName = "/home/chris/git/moonlight-maples/src/FeaturedProducts.jsx";
+
 
 
 
@@ -1270,57 +1272,27 @@ var featuredProducts = function featuredProducts() {
     className: "mb-4 featured-products mx-auto",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 11
     }
-  }, _content_products__WEBPACK_IMPORTED_MODULE_3__["default"].map(function (product) {
-    return product.featured ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-      sm: "3",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 14
-      }
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Card"], {
-      className: "shadow-md mb-3 rounded",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 15
-      }
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardImg"], {
-      top: true,
-      width: "100%",
-      src: product.mainImage,
-      alt: "Maple Syrup",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 16
-      }
-    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardBody"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 17
-      }
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardTitle"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 18
-      }
-    }, product.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardSubtitle"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 19
-      }
-    }, "???"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardText"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 20
-      }
-    }, product.description), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_2___default.a, {
-      variant: "contained",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 21
-      }
-    }, "View")))) : null;
+  }, _content_products__WEBPACK_IMPORTED_MODULE_4__["default"].map(function (product) {
+    return product.sizes.filter(function (x) {
+      return x.featured;
+    }).map(function (size) {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
+        sm: "3",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14
+        }
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Product__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        product: product,
+        size: size,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 15
+        }
+      }));
+    });
   }));
 };
 
@@ -2039,9 +2011,233 @@ var LinkList = function LinkList(props) {
 
 /***/ }),
 
-/***/ "./src/ProductsPage.js":
+/***/ "./src/Product.js":
+/*!************************!*\
+  !*** ./src/Product.js ***!
+  \************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactstrap */ "reactstrap");
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/Button */ "@material-ui/core/Button");
+/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "/home/chris/git/moonlight-maples/src/Product.js";
+
+
+
+
+var Product = function Product(_ref) {
+  var product = _ref.product,
+      size = _ref.size,
+      featured = _ref.featured;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Card"], {
+    className: "shadow-md mb-3 rounded text-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardImg"], {
+    top: true,
+    width: "100%",
+    src: product.mainImage,
+    alt: "Maple Syrup",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    }
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardBody"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardTitle"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    }
+  }, product.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardSubtitle"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    }
+  }, "$", size.price), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["CardText"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    }
+  }, size.quantity), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    variant: "contained",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    }
+  }, "View")));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Product);
+
+/***/ }),
+
+/***/ "./src/ProductsFilters.js":
+/*!********************************!*\
+  !*** ./src/ProductsFilters.js ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core/Typography */ "@material-ui/core/Typography");
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! reactstrap */ "reactstrap");
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "/home/chris/git/moonlight-maples/src/ProductsFilters.js";
+
+
+
+
+var ProductsFilters = function ProductsFilters(_ref) {
+  var updateProducts = _ref.updateProducts,
+      products = _ref.products,
+      filters = _ref.filters,
+      updateField = _ref.updateField;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+    sm: "2",
+    className: "my-4 products-filters border-right",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Row"], {
+    className: "mb-4",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+    sm: "12",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    component: "h5",
+    variant: "h5",
+    gutterBottom: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    }
+  }, "Price")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+    sm: "6",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["InputGroup"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["InputGroupAddon"], {
+    addonType: "prepend",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    }
+  }, "$"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Input"], {
+    type: "number",
+    placeholder: "Min",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    }
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+    sm: "6",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["InputGroup"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["InputGroupAddon"], {
+    addonType: "prepend",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    }
+  }, "$"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Input"], {
+    type: "number",
+    placeholder: "Max",
+    name: "maxPrice",
+    onChange: updateField,
+    value: filters.maxPrice,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    }
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Row"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+    sm: "12",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    component: "h5",
+    variant: "h5",
+    gutterBottom: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    }
+  }, "Type")), products.map(function (product) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+      sm: "12",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 31
+      }
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+      type: "checkbox",
+      checked: filters.types.includes(product.name),
+      onChange: updateField,
+      name: product.name,
+      className: "mr-2",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 32
+      }
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 33
+      }
+    }, product.name));
+  })));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (ProductsFilters);
+
+/***/ }),
+
+/***/ "./src/ProductsList.js":
 /*!*****************************!*\
-  !*** ./src/ProductsPage.js ***!
+  !*** ./src/ProductsList.js ***!
   \*****************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -2052,29 +2248,139 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactstrap */ "reactstrap");
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/home/chris/git/moonlight-maples/src/ProductsPage.js";
+/* harmony import */ var _Product__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Product */ "./src/Product.js");
+var _jsxFileName = "/home/chris/git/moonlight-maples/src/ProductsList.js";
 
- //import ProductsFilters from './ProductsFilters';
-//import ProductsList from './ProductsList';
 
-var ProductsPage = function ProductsPage() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "container-1600",
+
+
+var ProductsList = function ProductsList(_ref) {
+  var products = _ref.products;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
+    sm: "10",
+    className: "my-4 products-list",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
     }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ProductsFilters, {
+  }, products.map(function (product) {
+    return product.sizes.map(function (size) {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
+        sm: "3",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 11
+        }
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Product__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        product: product,
+        size: size,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12
+        }
+      }));
+    });
+  })));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (ProductsList);
+
+/***/ }),
+
+/***/ "./src/ProductsPage.js":
+/*!*****************************!*\
+  !*** ./src/ProductsPage.js ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "@babel/runtime/helpers/defineProperty");
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_helpers_objectSpread__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/objectSpread */ "@babel/runtime/helpers/objectSpread");
+/* harmony import */ var _babel_runtime_helpers_objectSpread__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_objectSpread__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "@babel/runtime/helpers/slicedToArray");
+/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! reactstrap */ "reactstrap");
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _ProductsFilters__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ProductsFilters */ "./src/ProductsFilters.js");
+/* harmony import */ var _ProductsList__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./ProductsList */ "./src/ProductsList.js");
+/* harmony import */ var _content_products__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./content/products */ "./src/content/products.js");
+
+
+
+var _jsxFileName = "/home/chris/git/moonlight-maples/src/ProductsPage.js";
+
+
+
+
+
+
+var ProductsPage = function ProductsPage() {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_3__["useState"])(_content_products__WEBPACK_IMPORTED_MODULE_7__["default"]),
+      _useState2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_2___default()(_useState, 2),
+      products = _useState2[0],
+      updateProducts = _useState2[1];
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_3__["useState"])({
+    minPrice: 0,
+    maxPrice: 999,
+    types: _content_products__WEBPACK_IMPORTED_MODULE_7__["default"].map(function (product) {
+      return product.name;
+    })
+  }),
+      _useState4 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_2___default()(_useState3, 2),
+      filters = _useState4[0],
+      updateFilters = _useState4[1]; //useEffect(() => 
+  //api call here to s3 here to get products information
+  //)
+
+
+  var refineProducts = function refineProducts(filters) {//price filter
+    //type filter
+  };
+
+  var updateField = function updateField(e) {
+    updateFilters(_babel_runtime_helpers_objectSpread__WEBPACK_IMPORTED_MODULE_1___default()({}, filters, _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default()({}, e.target.name, e.target.value)));
+    refineProducts(filters);
+    console.log(filters);
+  };
+
+  return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+    className: "container-1600",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 34
     }
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ProductsList, {
+  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_4__["Row"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 35
     }
-  }));
+  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_ProductsFilters__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    products: products,
+    filters: filters,
+    updateField: updateField,
+    updateProducts: updateProducts,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36
+    }
+  }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_ProductsList__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    products: products,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37
+    }
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (ProductsPage);
@@ -2162,11 +2468,11 @@ var products = [{
   name: 'Maple Syrup',
   mainImage: _images_maple_leaf_jpg__WEBPACK_IMPORTED_MODULE_0___default.a,
   description: 'This is some maple syrup',
-  featured: true,
   sizes: [{
     quantity: 'Gallon',
     price: 42,
-    image: ''
+    image: '',
+    featured: true
   }, {
     quantity: '1/2 Gallon',
     price: 23,
@@ -2192,7 +2498,6 @@ var products = [{
   name: 'Maple Cream',
   mainImage: _images_maple_leaf_jpg__WEBPACK_IMPORTED_MODULE_0___default.a,
   description: 'This is some maple cream',
-  featured: true,
   sizes: [{
     quantity: 'Pound',
     price: 12,
@@ -2200,13 +2505,13 @@ var products = [{
   }, {
     quantity: '1/2 Pound',
     price: 7,
-    image: ''
+    image: '',
+    featured: true
   }]
 }, {
   name: 'Maple Sugar',
   mainImage: _images_maple_leaf_jpg__WEBPACK_IMPORTED_MODULE_0___default.a,
   description: 'This is some maple sugar',
-  featured: true,
   sizes: [{
     quantity: 'Pound',
     price: 12,
@@ -2214,13 +2519,13 @@ var products = [{
   }, {
     quantity: '1/2 Pound',
     price: 8,
-    image: ''
+    image: '',
+    featured: true
   }]
 }, {
   name: 'Maple Honey',
   mainImage: _images_maple_leaf_jpg__WEBPACK_IMPORTED_MODULE_0___default.a,
   description: 'This is some honey',
-  featured: true,
   sizes: [{
     quantity: '5 lb',
     price: 35,
@@ -2240,7 +2545,8 @@ var products = [{
   }, {
     quantity: '8 oz',
     price: 5,
-    image: ''
+    image: '',
+    featured: true
   }]
 }];
 /* harmony default export */ __webpack_exports__["default"] = (products);
@@ -2459,6 +2765,17 @@ module.exports = require("@babel/runtime/helpers/createClass");
 
 /***/ }),
 
+/***/ "@babel/runtime/helpers/defineProperty":
+/*!********************************************************!*\
+  !*** external "@babel/runtime/helpers/defineProperty" ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@babel/runtime/helpers/defineProperty");
+
+/***/ }),
+
 /***/ "@babel/runtime/helpers/getPrototypeOf":
 /*!********************************************************!*\
   !*** external "@babel/runtime/helpers/getPrototypeOf" ***!
@@ -2481,6 +2798,17 @@ module.exports = require("@babel/runtime/helpers/inherits");
 
 /***/ }),
 
+/***/ "@babel/runtime/helpers/objectSpread":
+/*!******************************************************!*\
+  !*** external "@babel/runtime/helpers/objectSpread" ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@babel/runtime/helpers/objectSpread");
+
+/***/ }),
+
 /***/ "@babel/runtime/helpers/possibleConstructorReturn":
 /*!*******************************************************************!*\
   !*** external "@babel/runtime/helpers/possibleConstructorReturn" ***!
@@ -2489,6 +2817,17 @@ module.exports = require("@babel/runtime/helpers/inherits");
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/possibleConstructorReturn");
+
+/***/ }),
+
+/***/ "@babel/runtime/helpers/slicedToArray":
+/*!*******************************************************!*\
+  !*** external "@babel/runtime/helpers/slicedToArray" ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@babel/runtime/helpers/slicedToArray");
 
 /***/ }),
 

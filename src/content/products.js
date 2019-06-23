@@ -5,12 +5,12 @@ const products = [
     name: 'Maple Syrup',
     mainImage: mapleLeaf,
     description: 'This is some maple syrup',
-    featured: true,
     sizes: [
       {
         quantity: 'Gallon',
         price: 42,
         image: '',
+        featured: true,
       },
       {
         quantity: '1/2 Gallon',
@@ -43,7 +43,6 @@ const products = [
     name: 'Maple Cream',
     mainImage: mapleLeaf,
     description: 'This is some maple cream',
-    featured: true,
     sizes: [
       {
         quantity: 'Pound',
@@ -54,6 +53,7 @@ const products = [
         quantity: '1/2 Pound',
         price: 7,
         image: '',
+        featured: true
       },
     ],
   },
@@ -61,7 +61,6 @@ const products = [
     name: 'Maple Sugar',
     mainImage: mapleLeaf,
     description: 'This is some maple sugar',
-    featured: true,
     sizes: [
       {
         quantity: 'Pound',
@@ -72,6 +71,7 @@ const products = [
         quantity: '1/2 Pound',
         price: 8,
         image: '',
+        featured: true
       },
     ],
   },
@@ -79,7 +79,6 @@ const products = [
     name: 'Maple Honey',
     mainImage: mapleLeaf,
     description: 'This is some honey',
-    featured: true,
     sizes: [
       {
         quantity: '5 lb',
@@ -105,6 +104,7 @@ const products = [
         quantity: '8 oz',
         price: 5,
         image: '',
+        featured: true
       },
     ],
   },
